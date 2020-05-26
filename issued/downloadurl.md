@@ -78,9 +78,17 @@ Example\) Request Body
 }
 ```
 
-Example\) Respnse Body
+Example\) Respnse Body / ERROR
 
 ```text
-
+{
+"header":{
+"response_code": "",
+"result_code": "{에러코드}",
+"result_msg": "{에러 메세}",
+"session_id": ""
+},
+"body":{}
+}
 ```
 
