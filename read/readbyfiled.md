@@ -24,7 +24,6 @@
 | **Parameter Name**                         | **Value**                                                 | **Description** |
 | :--- | :--- | :--- |
 | Content-Type | String | "application/json" |
-| User-Agent | String | "esignonapi" |
 | Authorization | String | "esignon 발급받은 Token" |
 
 ####   Body 
