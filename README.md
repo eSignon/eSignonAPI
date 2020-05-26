@@ -28,7 +28,5 @@ Header 의 경우 최대 3개의 입력 값을 받으며 각 API 마다 받는 �
 }
 ```
 
-Body 의 경우 request 시에 위 처럼 body안에  header 값과 body 의 key,value를 각각 작성하여                                              요청하여야합니다. 안에 들어가는 key,value의 예시는 각 API의 설명에 자세히 설 되어있습니다
-
- See the Pen [API TEST](https://codepen.io/wodyd7654/pen/NWGmzmw) by wodyd7654 \([@wodyd7654](https://codepen.io/wodyd7654)\) on [CodePen](https://codepen.io).
+Body 의 경우 request 시에 위 처럼 body안에  header 값과 body 의 key,value를 각각 작성하여                                              요청하여야합니다. 안에 들어가는 key,value의 예시는 각 API에 명 되어있습니다
 
