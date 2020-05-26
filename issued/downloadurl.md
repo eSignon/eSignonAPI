@@ -76,12 +76,7 @@ Example\) Request Body
 
 Example\) Respnse Body
 
-완료 된 문서가 아닐 경우 아래와 같은 메세지 출력
-
 ```text
-<script type="text/javaScript">
-alert("workflow is not Complete");
-window.close();
-</script>
+
 ```
 
