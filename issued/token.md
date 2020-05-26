@@ -7,7 +7,7 @@
 
 | Url | Type | **Code** |
 | :--- | :--- | :--- |
-| https://docs.esignon.net/api/{CompID}/startsimple | POST | 1001Q |
+| https://docs.esignon.net/api/{CompID}/login | POST | 1001Q |
 
 ## Request
 
