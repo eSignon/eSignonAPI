@@ -18,6 +18,10 @@ workflowdownload
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+esignon TOKEN\_Value
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="Content-Type" type="string" required=false %}
 application/json
 {% endapi-method-parameter %}
