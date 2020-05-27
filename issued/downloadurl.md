@@ -2,7 +2,7 @@
 
 회사 ID 와 문서의 ID 를 통하여 문서를 다운로드 할 수 있는 URL 을 가져옵니다.
 
-주의 \) 문서 보안을 위해 Client\_id 를 사용합니다. id 값이 노출 될 경우 URL이 노출 될 수 있습니다.
+Authorization에 입력된 Token 값을 가진 유저가 볼 수 있는 문서만 접 가능합니다.
 
 생성된 URL은 5분간 유지됩니다.
 
@@ -34,10 +34,6 @@ application/json
 
 {% api-method-parameter name="client\_id" type="string" required=true %}
 esignon 에서 발급받은 ID 
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="comp\_id" type="string" required=true %}
-회사 ID
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -72,7 +68,6 @@ Example\) Request Body
 
 ```text
 {
-	"comp_id": "{회사 ID}",
 	"wfuid": "{완료 된 문서의 ID 값}",
   "client_id":"{발급받은 클라이언트 ID}"
 }
