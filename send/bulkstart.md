@@ -191,10 +191,10 @@
       	"password_hint":"{계약자가 볼 비밀번호 힌트}",  		
       	"password":"{설정할 문서 비밀번호}",
         "field_list": [{ // 서식에 값을 미리 입력할 경우 설정 여러 개 가능
-				"doc_id": "{ 서식 ID }",
-				"field_name": "{ 서식 필드명 }",
-				"field_value": "{ 서식 필드 값 }"
-			}]
+  				"doc_id": "{ 서식 ID }",
+  				"field_name": "{ 서식 필드명 }",
+  				"field_value": "{ 서식 필드 값 }"
+  			  }]
       }
       ],// unset_player_list에 들어있는 모든 고객에게 계약 발송
     "comment": ""
