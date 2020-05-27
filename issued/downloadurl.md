@@ -8,7 +8,7 @@ Authorization에 입력된 Token 값을 가진 유저가 볼 수 있는 문서�
 
 {% api-method method="post" host="https://docs.esignon.net" path="/workflow/download" %}
 {% api-method-summary %}
-workflowdownload
+workflow\_download
 {% endapi-method-summary %}
 
 {% api-method-description %}
