@@ -140,7 +140,7 @@
     <tr>
       <td style="text-align:left">player_list.password</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xBE44;&#xBC00;&#xBC88;</td>
+      <td style="text-align:left">&#xBE44;&#xBC00;&#xBC88;&#xD638;</td>
     </tr>
     <tr>
       <td style="text-align:left">field_list</td>
