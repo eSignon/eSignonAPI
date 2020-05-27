@@ -46,8 +46,8 @@
 | memb\_email | String | 계약 진행자 이메일 |
 | action\_id | String | 계약 진행중인 단계 |
 | workflow\_id | String | 계약중인 문서 ID |
-| comment | String | 승인 or 반려 시 발송하는 |
-| command | String | RT - 반려 / CF - 승인 / CF 시엔 문서에 필수 값을 입력한 상태여야 진행 가 |
+| comment | String | 승인 or 반려 시 발송하는 메세 |
+| command | String | RT - 반려 / CF - 승인 / CF 시엔 문서에 필수 값을 입력한 상태여야 진행 가능 |
 
 ## 요청 Body 예시\)
 
