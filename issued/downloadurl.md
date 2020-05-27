@@ -28,6 +28,10 @@ application/json
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="comp\_id" type="string" required=true %}
+회사ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="wfuid" type="string" required=true %}
 완료 된 문서의 ID 값
 {% endapi-method-parameter %}
@@ -68,6 +72,7 @@ Example\) Request Body
 
 ```text
 {
+  "comp_id": "{회사 ID}",
 	"wfuid": "{완료 된 문서의 ID 값}",
   "client_id":"{발급받은 클라이언트 ID}"
 }
