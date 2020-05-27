@@ -46,7 +46,7 @@
 | search\_date\_type | String | START or END / START – 문서 시작 기준 / END – 문서 완료 기준 |
 | start\_date | String | 검색 시작 지점 YYYY-MM-DD |
 | end\_date | String | 검색 종료 지점 YYYY-MM-DD |
-| field\_list | Data | 조회할 문서 정 |
+| field\_list | Data | 조회할 문서 정보 |
 | field\_list.doc\_uid | String | 조회할 문서의 서식 ID |
 | field\_list.field\_name | String | 조회할 문서 서식의 필드 이름 |
 
