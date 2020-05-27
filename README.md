@@ -11,9 +11,9 @@
 
 ### Ex\) Header
 
-![](.gitbook/assets/header.png)
+![](.gitbook/assets/head.png)
 
-Header 의 경우 최대 3개의 입력 값을 받으며 각 API 마다 받는 값의 종류의 차이가 있습니다.                                  이싸인온 토큰 값을 입력하는 Authorization 부분을 작성시엔                                                                         esignon 과 토근값 사이의 띄어쓰기 값이 필수적으로 입력되야 합니다.                        
+Header 의 경우 최대 2개의 입력 값을 받으며 토큰 발급 API 를 제외한 모든 API는                                                                                                      Authorization에 토큰값을 입력해서 요청을 해야합니다.                                                                                 esignon 과 토값 사이의 띄어쓰기 값이 필수적으로 입력되야 합니다.                        
 
 ### Ex\) Body
 
