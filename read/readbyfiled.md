@@ -62,11 +62,11 @@
 	   "comp_id": "{ 회사 ID }",
 	   "client_id":"{ 발급받은 클라이언트 ID }",
 	   "field_list": [ 
-		    {
-			"doc_uid": "{조회할 서식 ID}",
-			"field_name": "{조회할 서식의 필드 이름}",
-			"field_value": "{위에 설정한 필드 이름에 들어간 값}"
-		    }
+			    {
+						"doc_uid": "{조회할 서식 ID}",
+						"field_name": "{조회할 서식의 필드 이름}",
+						"field_value": "{위에 설정한 필드 이름에 들어간 값}"
+			    }
 	   ]
 	 }
 }
@@ -97,30 +97,30 @@
 ```text
 {
 	"header":{
-	"response_code": "5008A",
-	"result_code": "00",
-	"result_msg": "필드 상태가 검색되었습니다.",
-	"session_id": "",
-	"version": "1.1.60"
+		"response_code": "5008A",
+		"result_code": "00",
+		"result_msg": "필드 상태가 검색되었습니다.",
+		"session_id": "",
+		"version": "1.1.60"
 	},
 	"body":{
-	"comp_id": "{회사 ID}",
-	"wf_list":[
-		{
-		"doc_uid": "{서식ID}",
-		"end_date": "{서명 완료 시간}",
-		"total_process_count": "1", // 서식 단계
-		"wf_manager_name": "{ 문서 생성자 이름 }",
-		"wf_manager_email": "{ 문서 생성자 이메일 }",
-		"wf_status": "Complete", // 문서 상태 Complete – 완료, Playing – 진행중
-		"field_value": "{조회한 필드 값}",
-		"wfuid": "{문서 ID}",
-		"current_process_no": "1",
-		"wf_title": "{문서 이름}",
-		"start_date": "{문서 시작 시간}",
-		"field_name": "{조회한 필드 이름}"
-		}
-	]
+		"comp_id": "{회사 ID}",
+		"wf_list":[
+			{
+				"doc_uid": "{서식ID}",
+				"end_date": "{서명 완료 시간}",
+				"total_process_count": "1", // 서식 단계
+				"wf_manager_name": "{ 문서 생성자 이름 }",
+				"wf_manager_email": "{ 문서 생성자 이메일 }",
+				"wf_status": "Complete", // 문서 상태 Complete – 완료, Playing – 진행중
+				"field_value": "{조회한 필드 값}",
+				"wfuid": "{문서 ID}",
+				"current_process_no": "1",
+				"wf_title": "{문서 이름}",
+				"start_date": "{문서 시작 시간}",
+				"field_name": "{조회한 필드 이름}"
+			}
+		]
 	}
 }
 

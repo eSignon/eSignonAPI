@@ -57,11 +57,11 @@
                 "version": "9.9.99"
         },
         "body": {
-         "comp_id": "{회사 ID}",
-         "biz_id": "0",
-         "memb_email" : "{사용자 이메일}",
-         "search_dir_id": "all", // all ( 공유폴더 ) , my ( 내 폴더 )
-         "display_order_mode": "1" // 정렬 기준값 1 ~ 11
+                 "comp_id": "{회사 ID}",
+                 "biz_id": "0",
+                 "memb_email" : "{사용자 이메일}",
+                 "search_dir_id": "all", // all ( 공유폴더 ) , my ( 내 폴더 )
+                 "display_order_mode": "1" // 정렬 기준값 1 ~ 11
         }
 }
 
@@ -88,18 +88,18 @@
 ```text
 {
 	"body":{
-	"comp_id": "{회사 ID}",
-	"biz_id": "0",
-	"memb_email": "{사용자 이메일}",
-	"search_dir_id": "all",
-	"file_list":[{서식 정보 // Example} file_lsit 참조}] 서식 전체 조회이기 때문에 모든 서식 데이터
+		"comp_id": "{회사 ID}",
+		"biz_id": "0",
+		"memb_email": "{사용자 이메일}",
+		"search_dir_id": "all",
+		"file_list":[{서식 정보 // Example} file_lsit 참조}] 서식 전체 조회이기 때문에 모든 서식 데이터
 	},
 	"header":{
-	"session_id": "session_id",
-	"response_code": "1123A",
-	"result_code": "00",
-	"result_msg": "파일 리스트입니다.",
-	"version": "9.9.99"
+		"session_id": "session_id",
+		"response_code": "1123A",
+		"result_code": "00",
+		"result_msg": "파일 리스트입니다.",
+		"version": "9.9.99"
 	}
 }
 

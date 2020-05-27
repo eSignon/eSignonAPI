@@ -51,14 +51,14 @@ esignon 에서 발급받은 ID
 ```
 {
 	"header":{
-	"response_code": "/workflow/download",
-	"result_code": "00",
-	"result_msg": "Success",
-	"session_id": ""
+		"response_code": "/workflow/download",
+		"result_code": "00",
+		"result_msg": "Success",
+		"session_id": ""
 	},
 	"body":{
-	"result_url": "{다운로드 URL}",
-	"wfname": "{문서 이름}"
+		"result_url": "{다운로드 URL}",
+		"wfname": "{문서 이름}"
 	}
 }
 
@@ -83,10 +83,10 @@ Example\) Respnse Body / ERROR
 ```text
 {
 "header":{
-"response_code": "",
-"result_code": "{에러코드}",
-"result_msg": "{'코드에 따른 메세지'}",
-"session_id": ""
+    "response_code": "",
+    "result_code": "{에러코드}",
+    "result_msg": "{'코드에 따른 메세지'}",
+    "session_id": ""
 },
 "body":{}
 }
