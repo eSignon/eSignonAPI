@@ -48,16 +48,16 @@
 
 ```text
 {
-"header": {
-	"request_code": "1429Q",
-	"request_msg": "Remind 를 요청합니다.",
-	"session_id": "thread_023"},
-"body": {
-	"comp_id": "{회사 ID}",
-	"biz_id": "0",
-	"memb_email": "{사용자 이메일}",
-	"workflow_id": "{진행 문서 ID}"
-}
+	"header": {
+		"request_code": "1429Q",
+		"request_msg": "Remind 를 요청합니다.",
+		"session_id": "thread_023"},
+	"body": {
+		"comp_id": "{회사 ID}",
+		"biz_id": "0",
+		"memb_email": "{사용자 이메일}",
+		"workflow_id": "{진행 문서 ID}"
+		}
 }
 
 ```
@@ -83,16 +83,16 @@
 ```text
 {
 	"header":{
-	"session_id": "thread_023",
-	"response_code": "1429A",
-	"result_code": "00",
-	"result_msg": "Remind를 성공 하었습니다."
+		"session_id": "thread_023",
+		"response_code": "1429A",
+		"result_code": "00",
+		"result_msg": "Remind를 성공 하었습니다."
 	},
 	"body":{
-	"comp_id": "{회사 ID}",
-	"biz_id": "0",
-	"memb_email": "{사용자 이메일}",
-	"workflow_id": "{진행 문서 ID}"
+		"comp_id": "{회사 ID}",
+		"biz_id": "0",
+		"memb_email": "{사용자 이메일}",
+		"workflow_id": "{진행 문서 ID}"
 	}
 }
 

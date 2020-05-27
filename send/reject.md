@@ -94,13 +94,13 @@
 ```text
 {
 	"header":{
-	"response_code": "5010A",
-	"result_code": "00",
-	"result_msg": "성공하였습니다.",
-	"version": "9.9.99"
+		"response_code": "5010A",
+		"result_code": "00",
+		"result_msg": "성공하였습니다.",
+		"version": "9.9.99"
 	},
 	"body":{
-	"comp_id": "{회사 ID}"
+		"comp_id": "{회사 ID}"
 	}
 }
 ```

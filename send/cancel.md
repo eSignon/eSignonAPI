@@ -48,20 +48,20 @@
 ```text
 {
 	"header": {
-		"request_code": "1510Q",
-		"request_msg": "",
-      	        "request_lang":"{ko or ja or en}",
-		"session_id": "session_id",
-		"version": "9.9.99"
+			"request_code": "1510Q",
+			"request_msg": "",
+	    "request_lang":"{ko or ja or en}",
+			"session_id": "session_id",
+			"version": "9.9.99"
 	},
 	"body": {
-	"comp_id": "{회사 ID}",
-      	"biz_id":"0",
-      	"memb_email":"{사용자 이메일}",
-      	"workflow_id":"{문서 ID}",
-      	"command":"{ CANCEL or DISPOSAL }",
-      	"description":"{폐기 사유 입력}", // 
-      	"timezone_offset":"+09:00" // UTC 00:00 기준 한국의 경우 +09:00으로
+			"comp_id": "{회사 ID}",
+      "biz_id":"0",
+      "memb_email":"{사용자 이메일}",
+      "workflow_id":"{문서 ID}",
+      "command":"{ CANCEL or DISPOSAL }",
+      "description":"{폐기 사유 입력}", // 
+      "timezone_offset":"+09:00" // UTC 00:00 기준 한국의 경우 +09:00으로
 	}
 }
 ```

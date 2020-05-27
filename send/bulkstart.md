@@ -116,7 +116,7 @@
       <td style="text-align:left">unset_player_list.mobile_number</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">&#xBCF8;&#xC778;&#xC778;&#xC99D;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xBC88;&#xD638;
-        / - &#xC5C6;</td>
+        / - &#xC5C6;&#xC774;</td>
     </tr>
     <tr>
       <td style="text-align:left">unset_player_list.enable_password_cert</td>
@@ -188,8 +188,8 @@
         "enable_mobile_cert" : "{ 휴대폰 본인인증 여부 true or flase }",
         "mobile_number" : "{ 본인 인증에 사용할 전화번호 }",
         "enable_password_cert":"{true or false}",
-	"password_hint":"{계약자가 볼 비밀번호 힌트}",  		
-	"password":"{설정할 문서 비밀번호}",
+      	"password_hint":"{계약자가 볼 비밀번호 힌트}",  		
+      	"password":"{설정할 문서 비밀번호}",
         "field_list": [{ // 서식에 값을 미리 입력할 경우 설정 여러 개 가능
 				"doc_id": "{ 서식 ID }",
 				"field_name": "{ 서식 필드명 }",
@@ -229,21 +229,21 @@
 }
 	"body":{
 		"workflow_list":[
-		{
-		"workflow_id": "{문서ID}",
-		"unset_player_email": "{서명자 이메일 or 전화번호}",
-		"unset_player_name": "{서명자 이름}",
-		"result": "OK",
-		"description": "",
-		"workflow_name": "{서식 이름}",
-		"token": "{인증 토큰 코드}",
-		"lang": "ko-KR",
-		"reg_date": "{회사 결제 갱신일}"}],
-		"comp_id": "{회사 ID}",
-		"biz_id": "0",
-		"memb_email": "{생성자 이메일}",
-		"workflow_lib_id": "{서식 lib_id}"
-		},
+			{
+			"workflow_id": "{문서ID}",
+			"unset_player_email": "{서명자 이메일 or 전화번호}",
+			"unset_player_name": "{서명자 이름}",
+			"result": "OK",
+			"description": "",
+			"workflow_name": "{서식 이름}",
+			"token": "{인증 토큰 코드}",
+			"lang": "ko-KR",
+			"reg_date": "{회사 결제 갱신일}"}],
+			"comp_id": "{회사 ID}",
+			"biz_id": "0",
+			"memb_email": "{생성자 이메일}",
+			"workflow_lib_id": "{서식 lib_id}"
+			},
 	"header":{
 		"session_id": "thread_023",
 		"response_code": "1410A",

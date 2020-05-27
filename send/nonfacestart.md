@@ -359,19 +359,19 @@
 
 ```text
 { 
-"header":{
- "session_id": "S1001", 
-"response_code": "5005A",
-"result_code": "00", 
-"result_msg": "Work Flow가 시작됩니다.", 
-"version": "9.9.99" }, 
-"body":{ 
-"comp_id": "{ 회사 ID }", 
-"biz_id": "0", 
-"memb_email": "{ 생성자 이메일 }", 
-"workflow_id": "{ 서식 ID }", 
-"workflow_name": "{ 시작된 서식 이름 }", 
-"token": "{ 발급된 토큰 }", "lang": "ko-KR" }
+ "header":{
+   "session_id": "S1001", 
+   "response_code": "5005A",
+   "result_code": "00", 
+   "result_msg": "Work Flow가 시작됩니다.", 
+   "version": "9.9.99" }, 
+ "body":{ 
+   "comp_id": "{ 회사 ID }", 
+   "biz_id": "0", 
+   "memb_email": "{ 생성자 이메일 }", 
+   "workflow_id": "{ 서식 ID }", 
+   "workflow_name": "{ 시작된 서식 이름 }", 
+   "token": "{ 발급된 토큰 }", "lang": "ko-KR" }
 }
 ```
 
