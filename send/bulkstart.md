@@ -165,42 +165,39 @@
 
 ```text
 {
-  "header": {
-    "request_code": "5004Q",
-    "api_name": "start api",
-    "session_id": "S1001",
-    "version" : "9.9.99"
-  },
-  "body": {
-    "comp_id": "{회사 ID}",
-    "biz_id": "0",
-    "memb_email": "{ 사용자 이메일 }",
-    "workflow_lib_id": "{ 서식의 lib_id }",
-    "workflow_name": "",
-    "clientid" : "{ 발급받은 클라이언트 ID }",
-    "unset_player_list": [
-      {
-        "memb_id_type" : "{ EMail or Mobile }",
-        "email": "{ memb_id_type 에 따라 번호나 이메일 }",
-        "name" : "{ 받는 사람 이름 }",
-        "language": "ko-KR",//ko-KR, ja-JP, en-US
-        "workflow_name" : "{서식 이름}",
-        "enable_mobile_cert" : "{ 휴대폰 본인인증 여부 true or flase }",
-        "mobile_number" : "{ 본인 인증에 사용할 전화번호 }",
-        "enable_password_cert":"{true or false}",
-      	"password_hint":"{계약자가 볼 비밀번호 힌트}",  		
-      	"password":"{설정할 문서 비밀번호}",
-        "field_list": [{ // 서식에 값을 미리 입력할 경우 설정 여러 개 가능
-  				"doc_id": "{ 서식 ID }",
-  				"field_name": "{ 서식 필드명 }",
-  				"field_value": "{ 서식 필드 값 }"
-  			  }]
-      }
-      ],// unset_player_list에 들어있는 모든 고객에게 계약 발송
-    "comment": ""
-  }
+	"header": {
+		"request_code": "5004Q",
+		"api_name": "start api",
+		"session_id": "S1001",
+		"version": "9.9.99"
+	},
+	"body": {
+		"comp_id": "{회사 ID}",
+		"biz_id": "0",
+		"memb_email": "{ 사용자 이메일 }",
+		"workflow_lib_id": "{ 서식의 lib_id }",
+		"workflow_name": "",
+		"clientid": "{ 발급받은 클라이언트 ID }",
+		"unset_player_list": [{
+			"memb_id_type": "{ EMail or Mobile }",
+			"email": "{ memb_id_type 에 따라 번호나 이메일 }",
+			"name": "{ 받는 사람 이름 }",
+			"language": "ko-KR", //ko-KR, ja-JP, en-US
+			"workflow_name": "{서식 이름}",
+			"enable_mobile_cert": "{ 휴대폰 본인인증 여부 true or flase }",
+			"mobile_number": "{ 본인 인증에 사용할 전화번호 }",
+			"enable_password_cert": "{true or false}",
+			"password_hint": "{계약자가 볼 비밀번호 힌트}",
+			"password": "{설정할 문서 비밀번호}",
+			"field_list": [{ // 서식에 값을 미리 입력할 경우 설정 여러 개 가능
+				"doc_id": "{ 서식 ID }",
+				"field_name": "{ 서식 필드명 }",
+				"field_value": "{ 서식 필드 값 }"
+			}]
+		}],// unset_player_list에 들어있는 모든 고객에게 계약 발송
+		"comment": ""
+	}
 }
-
 ```
 
 ## Response
