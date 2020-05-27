@@ -33,7 +33,7 @@
 | :--- | :--- | :--- |
 | request\_code | String | "5009Q"\(API 고유 코드\) |
 | api\_name | String | "start api" |
-| session\_id | Stri | "" |
+| session\_id | String | "" |
 | version | String | "1.1.60" |
 
   Body - Body Parameter
