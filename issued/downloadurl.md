@@ -85,7 +85,7 @@ Example\) Respnse Body / ERROR
 "header":{
 "response_code": "",
 "result_code": "{에러코드}",
-"result_msg": "{에러 메세}",
+"result_msg": "{코드에 따른 메세}",
 "session_id": ""
 },
 "body":{}
