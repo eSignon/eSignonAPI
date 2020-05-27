@@ -103,5 +103,5 @@
 }
 ```
 
- See the Pen [API TEST](https://codepen.io/wodyd7654/pen/NWGmzmw) by wodyd7654 \([@wodyd7654](https://codepen.io/wodyd7654)\) on [CodePen](https://codepen.io).
+
 
