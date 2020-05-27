@@ -242,7 +242,7 @@
     <tr>
       <td style="text-align:left">customer_list.email</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">id_type &#xC5D0; &#xB530;&#xB77C; &#xC774;&#xBA54;&#xC77C; or &#xBC88;</td>
+      <td style="text-align:left">id_type &#xC5D0; &#xB530;&#xB77C; &#xC774;&#xBA54;&#xC77C; or &#xBC88;&#xD638;</td>
     </tr>
     <tr>
       <td style="text-align:left">customer_list.id_type</td>
