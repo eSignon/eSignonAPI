@@ -104,7 +104,7 @@
     <tr>
       <td style="text-align:left">unset_player_list.workflow_name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xC2DC;&#xC791;&#xD558;&#xB294; &#xC11C;&#xC2DD; &#xC774;</td>
+      <td style="text-align:left">&#xC2DC;&#xC791;&#xD558;&#xB294; &#xC11C;&#xC2DD; &#xC774;&#xB984;</td>
     </tr>
     <tr>
       <td style="text-align:left">unset_player_list.enable_mobile_cert</td>
