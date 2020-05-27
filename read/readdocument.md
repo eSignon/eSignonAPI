@@ -33,7 +33,7 @@
 | :--- | :--- | :--- |
 | request\_code | String | "1123Q"\(API 고유 코드\) |
 | request\_msg | String | "" |
-| session\_id | Stri | "" |
+| session\_id | String | "" |
 | version | String | "9.9.99" |
 
   Body - Body Parameter
