@@ -77,13 +77,13 @@ Example\) Respnse Body / ERROR
 
 ```text
 {
-"header":{
-    "response_code": "",
-    "result_code": "{에러코드}",
-    "result_msg": "{'코드에 따른 메세지'}",
-    "session_id": ""
-},
-"body":{}
+    "header":{
+        "response_code": "",
+        "result_code": "{에러코드}",
+        "result_msg": "{'코드에 따른 메세지'}",
+        "session_id": ""
+    },
+    "body":{}
 }
 ```
 
