@@ -161,7 +161,9 @@
       <td style="text-align:left">&quot;&quot;</td>
     </tr>
   </tbody>
-</table>## 요청 Body 예시\)
+</table>
+
+## 요청 Body 예시\)
 
 ```text
 {
