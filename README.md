@@ -1,22 +1,23 @@
-# API 설명
+# API Description
 
-* esignon 의 API 는 Header - Body 형식 이며 
-* Body 데이터 형식또한 프로토콜 코드와 version 관리를 위해 Header - Body 형식으로 제공합니다.
-* 형식 ex\) Header - Body \( Header - Body \)
-* 일부 API 의 경우 Body 의 형식이 다를 수 있습니다. 각 API의 설명을 참고해주시기 바랍니다.
-* 이싸인온 API 사용시 회사 고유의 클라이언트 ID가 필요합니다.  
-* 클라이언트 ID 발급은 [고객문의](https://esignon.net/wordpress/inquiry/)를 이용 부탁드립니다.
-* 사용순서 \) 클라이언트 ID 발급\(회사문의\) -&gt; 인증토큰 발급 -&gt; 인증토큰을 이용하여 API 사용
+* The API provided by esignon is in the format of Header-Body.
+* Body data format is also provided in Header-Body format for protocol code and version management.
+* Format eg\) Header-Body \(Header-Body\)
+* For some APIs, the body type may be different, so please refer to the description of each API.
+* When using eSignon API, a unique client ID is required.
+* For client ID issuance, please contact customer inquiry in our [homepage](https://esignon.net/en/customer/).
+* How to use\) Client ID issuance \(customer inquiry\) -&gt; Authentication token issuance -&gt; API use by authentication token
+* ※Please follow the format of header token value input※
 
 ## Ex\) Header
 
 ![](.gitbook/assets/head.png)
 
-Header 의 경우 최대 2개의 입력 값을 받으며 토큰 발급 API 를 제외한 모든 API는 Authorization에 토큰값을 입력해서 요청을 해야합니다. esignon 과 토큰 값 사이의 띄어쓰기 값이 필수적으로 입력되야 합니다.
+In the case of Header, up to 2 input values are received, and all APIs except for the token issuance API must request by entering a token value in the Authorization field. A space between esignon and token value must be entered.
 
 ## Ex\) Body
 
-```text
+```jsx
 {
     "header": {
         Key : "value"
@@ -27,5 +28,5 @@ Header 의 경우 최대 2개의 입력 값을 받으며 토큰 발급 API 를 �
 }
 ```
 
-Body 의 경우 request 시에 위 처럼 body안에 header 값과 body 의 key,value를 각각 작성하여 요청하여야합니다. 안에 들어가는 key,value의 예시는 각 API에 명 되어있습니다
+In the case of body, as above, when requesting, the header value and the key and value of the body must be written and requested in the body. Examples of key and value entered are listed in each API.
 
