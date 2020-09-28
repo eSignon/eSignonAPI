@@ -5,8 +5,9 @@
 * 형식 ex\) Header - Body \( Header - Body \)
 * 일부 API 의 경우 Body 의 형식이 다를 수 있습니다. 각 API의 설명을 참고해주시기 바랍니다.
 * 이싸인온 API 사용시 회사 고유의 클라이언트 ID가 필요합니다.  
-* 클라이언트 ID 발급은 [고객문의](https://esignon.net/wordpress/inquiry/)를 이용 부탁드립니다.
+* 클라이언트 ID 발급은 [고객문의](https://esignon.net/customer/)를 이용 부탁드립니다.
 * 사용순서 \) 클라이언트 ID 발급\(회사문의\) -&gt; 인증토큰 발급 -&gt; 인증토큰을 이용하여 API 사용
+* **`※Header 토큰 값 입력 형식을 꼭 지켜주세요※`**
 
 ## Ex\) Header
 
@@ -16,7 +17,7 @@ Header 의 경우 최대 2개의 입력 값을 받으며 토큰 발급 API 를 �
 
 ## Ex\) Body
 
-```text
+```jsx
 {
     "header": {
         Key : "value"
