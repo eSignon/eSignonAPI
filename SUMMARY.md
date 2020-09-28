@@ -1,24 +1,28 @@
 # Table of contents
 
-* [API 설명](README.md)
+* [API説明](README.md)
 
-## 발급 <a id="issued"></a>
+## 発給 <a id="issued"></a>
 
-* [인증토큰 발급](issued/token.md)
-* [문서 다운로드 URL 생성](issued/downloadurl.md)
+* [認証トークン発行](issued/token.md)
 
-## 조회 <a id="read"></a>
+## 文書 <a id="workflow"></a>
 
-* [특정필드 값으로 조회](read/readbyfiled.md)
-* [기간으로 조회](read/readbydate.md)
-* [진행 문서 목록조회](read/readallworkflow.md)
-* [서식 목록조회](read/readdocument.md)
+* [作成](workflow/start/README.md)
+  * [非対面契約開始](workflow/start/nonfacestart.md)
+  * [非対面契約開始 - ExportAPI 説明](workflow/start/exportapi.md)
+  * [大量契約の開始](workflow/start/bulkstart.md)
+* [照会](workflow/view/README.md)
+  * [特定フィールド値で照会](workflow/view/readbyfiled.md)
+  * [期間で照会](workflow/view/readbydate.md)
+  * [進行文書リスト照会](workflow/view/readallworkflow.md)
+* [状態変更](workflow/modify/README.md)
+  * [承認、返戻](workflow/modify/reject.md)
+  * [取り消し、廃棄](workflow/modify/cancel.md)
+* [ダウンロードURL作成](workflow/downloadurl.md)
+* [再送信](workflow/remind.md)
 
-## 요청 <a id="send"></a>
+## 書式 <a id="template"></a>
 
-* [대량발송 계약 시작](send/bulkstart.md)
-* [재전송](send/remind.md)
-* [비대면 계약 시작](send/nonfacestart.md)
-* [문서 승인, 반려](send/reject.md)
-* [문서 취소, 폐기](send/cancel.md)
+* [書式リスト照会](template/readdocument.md)
 
