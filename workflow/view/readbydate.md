@@ -29,26 +29,85 @@
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | "5009Q"\(API 고유 코드\) |
-| api\_name | String | "start api" |
-| session\_id | String | "" |
-| version | String | "1.1.60" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | "5009Q"\(API 고유 코드\) |
+| api\_name | String | Required | "start api" |
+| session\_id | String | Required | "" |
+| version | String | Required | "1.1.60" |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | 회사 ID |
-| doc\_uid | Stirng | 조회할 문서의 서식 ID |
-| client\_id | String | esignon 에서 발급받은 ID \( 발급은 문의 \) |
-| search\_date\_type | String | START or END / START – 문서 시작 기준 / END – 문서 완료 기준 |
-| start\_date | String | 검색 시작 지점 YYYY-MM-DD |
-| end\_date | String | 검색 종료 지점 YYYY-MM-DD |
-| field\_list | Data | 조회할 문서 정보 |
-| field\_list.doc\_uid | String | 조회할 문서의 서식 ID |
-| field\_list.field\_name | String | 조회할 문서 서식의 필드 이름 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter Name</b>
+      </th>
+      <th style="text-align:left">DataType</th>
+      <th style="text-align:left">Required</th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">comp_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xD68C;&#xC0AC; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">client_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">esignon &#xC5D0;&#xC11C; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; ID ( &#xBC1C;&#xAE09;&#xC740;
+        &#xBB38;&#xC758; )</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">search_date_type</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">START or END / START &#x2013; &#xBB38;&#xC11C; &#xC2DC;&#xC791; &#xAE30;&#xC900;
+        / END &#x2013; &#xBB38;&#xC11C; &#xC644;&#xB8CC; &#xAE30;&#xC900; - &#xBBF8;
+        &#xC785;&#xB825;&#xC2DC; &#xB514;&#xD3F4;&#xD2B8;&#xAC12; &quot;END&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">start_date</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xAC80;&#xC0C9; &#xC2DC;&#xC791; &#xC9C0;&#xC810; YYYY-MM-DD</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">end_date</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xAC80;&#xC0C9; &#xC885;&#xB8CC; &#xC9C0;&#xC810; YYYY-MM-DD</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list</td>
+      <td style="text-align:left">Data</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC870;&#xD68C;&#xD560; &#xBB38;&#xC11C; &#xC815;&#xBCF4;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list.doc_uid</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC870;&#xD68C;&#xD560; &#xBB38;&#xC11C;&#xC758; &#xC11C;&#xC2DD; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list.field_name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">
+        <p>&#xC870;&#xD68C;&#xD560; &#xBB38;&#xC11C; &#xC11C;&#xC2DD;&#xC758; &#xD544;&#xB4DC;
+          &#xC774;&#xB984;</p>
+        <p>- &#xC785;&#xB825;&#xC2DC; &#xD574;&#xB2F9; &#xD544;&#xB4DC; &#xC774;&#xB984;&#xACFC;
+          &#xAC19;&#xC740; &#xD544;&#xB4DC;&#xC758; &#xAC12;&#xC744; &#xAC00;&#xC838;&#xC635;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 요청 Body 예시\)
 
@@ -62,7 +121,6 @@
  },
    "body" : {
      "comp_id": "{회사 ID}",
-     "doc_uid": "{서식 ID}",
      "client_id": "{발급받은 클라이언트 ID}",
      "search_date_type":"{START or END}",
      "start_date": "{검색 시작 지점}",
