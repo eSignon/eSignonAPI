@@ -52,7 +52,7 @@
 
 ## Request Body Example\)
 
-```text
+```javascript
 {
  "header" : {
    "request_code" : "5010Q",            

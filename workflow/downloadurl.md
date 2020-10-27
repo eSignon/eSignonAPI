@@ -44,7 +44,7 @@ ID issued by esignon
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "",
@@ -66,7 +66,7 @@ ID issued by esignon
 
 Example\) Request Body
 
-```text
+```javascript
 {
   "client_id":"{ID issued by esignon}",
 	"workflow_id": "{ID of completed document}"
@@ -75,7 +75,7 @@ Example\) Request Body
 
 Example\) Response Body / Error
 
-```text
+```javascript
 {
     "header":{
         "response_code": "",

@@ -48,7 +48,7 @@
 
 ## Request Body Example\)
 
-```text
+```javascript
 {
         "header": {
                 "request_code": "1123Q",
@@ -85,14 +85,14 @@
 
 ## Response Body Example\)
 
-```text
+```javascript
 {
 	"body":{
 		"comp_id": "{Company ID}",
 		"biz_id": "0",
 		"memb_email": "{user email}",
 		"search_dir_id": "all",
-		"file_list":[{ Displays all template data as it is a full search of the templates}]
+		"file_list":[{Displays all template data as it is a full search of the templates}]
 	},
 	"header":{
 		"session_id": "session_id",
@@ -107,7 +107,7 @@
 
 #### Example\) file\_list
 
-```text
+```javascript
 {
 	"file_id": "{Template ID}",
 	"file_type": "templete",

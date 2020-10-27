@@ -163,7 +163,7 @@
 
 ## Request Body Example
 
-```text
+```javascript
 {
   "header": {
     "request_code": "1410Q",
@@ -177,8 +177,7 @@
     "memb_email": "{ Email of document starter}",
     "workflow_lib_id": "{ templete lib_id }",
     "workflow_name": "",
-    "unset_player_list": [
-      {
+    "unset_player_list": [{
         "memb_id_type" : "{ EMail }",
         "email": "{ email adress }",
         "name" : "{ Signer name }",
@@ -193,9 +192,8 @@
       				"doc_id": "{ Templete ID }",
       				"field_name": "{ Templete field name }",
       				"field_value": "{ The value you want to enter in the appropriate field }"
-			}]
-      }
-      ],// Send contracts to all customers you set up
+			  }]
+      }],// Send contracts to all customers you set up
     "comment": "",
     "enable_legal_agreement":"false"
   }
@@ -224,7 +222,7 @@
 
 ## Response Body Example
 
-```text
+```javascript
 }
 	"body":{
 		"workflow_list":[

@@ -50,7 +50,7 @@
 
 ## Request Body Example
 
-```text
+```javascript
 {
 	 "header" : {
 	   "request_code" : "5008Q",            
@@ -94,7 +94,7 @@
 
 ## Response Body Example
 
-```text
+```javascript
 {
 	"header":{
 		"response_code": "5008A",

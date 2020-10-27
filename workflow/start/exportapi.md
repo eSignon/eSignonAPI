@@ -107,7 +107,7 @@ If using embedded code, we provide the contract start URL with a response upon i
 
 ## export\_api Response\) 
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -132,7 +132,7 @@ If using embedded code, we provide the contract start URL with a response upon i
 
 ## Export\_api Response Example\) When code-embedded \(Playing\)
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -162,7 +162,7 @@ If using embedded code, we provide the contract start URL with a response upon i
 
 ## Export\_api Response Example\) When code-embedded \(Complete\)
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",

@@ -37,7 +37,7 @@ esignon {accesstoken}
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "/worklists/new",
@@ -53,20 +53,20 @@ esignon {accesstoken}
 		"rows": "{Number of lists to be shown per page}",
 		"total": "{Total Documents}",
 		"workflow_list":[{
-			"wfuid": {Documents ID},
+			"wfuid": "{Documents ID}",
 			"wfname": "{Documents Title}",
 			"wftype": "{Documents Type}",
 			"status": "{Documents Status}",
 			"step": "{Documents Step}",
 			"nickname": "{Document starter's name}",
-			"currentactionid": {Process step number of document},
+			"currentactionid": "{Process step number of document}",
 			"email": "{Document starter's email}",
 			"startdate": "{Document Start Time}",
-			"totalprocesscount": {Total number of steps in the document},
-			"currentprocesscount": {Completion Process Step Number},
+			"totalprocesscount": "{Total number of steps in the document}",
+			"currentprocesscount": "{Completion Process Step Number}",
 			"confirmdate": "{Document finished time}",
 			"preactionid": {},
-			"preactionemail":{Referer Email}
+			"preactionemail":"{Referer Email}"
 			}]
 	}
 }
