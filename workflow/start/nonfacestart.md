@@ -78,7 +78,7 @@
 
 ## Request Body Example
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -92,7 +92,7 @@
 		"language": "ko-KR",
 		"comment": "",
 		"player_list": [{
-			"field_owner": "1",(순서)
+			"field_owner": "1",//(순서)
 			"email": "{ 받는 사람 email or 받는 사람 휴대폰 번호 }",
       "name":"{ 받는 사람 이름 }",
 			"language": "{ ko-KR }",
@@ -109,7 +109,7 @@
       "password":"{}"
 		}],
 		"field_list": [{
-				"field_name": "{ field_name }", ( 서식에 미리 값을 넣을 경우에만 사용 )
+				"field_name": "{ field_name }", //( 서식에 미리 값을 넣을 경우에만 사용 )
 				"field_value": "{ field_value }"
 			}
 		],
@@ -128,8 +128,8 @@
 	      "request_params": [{
 								"param_id": "{받아올 파라미터 이름(사용자 지정)}",
 								"param_value": "{fields에서 설정한 값이 없을 경우 받아올 기본 값}",
-								"fields": [{ // 서식에 field_name으로 등록한 필드 박스의 값이 없을경우 param_id:param_value return / 
-																값이 있을경우엔 param_id:field_value를 return
+								"fields": [{ // 서식에 field_name으로 등록한 필드 박스의 값이 없을경우 param_id:param_value return  
+													   // 값이 있을경우엔 param_id:field_value를 return
                             "doc_id":"{ 서식 ID }",
                             "field_name":"{ 값을 가져올 서식 내 필드명 }" 
           			}]
@@ -141,7 +141,7 @@
 
 ## Request Body Example - only Required
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -168,7 +168,7 @@
 
 ## Request Body Example - For TEST Account
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -226,7 +226,7 @@
 
 ## Response Body Example
 
-```text
+```javascript
 { 
  "header":{
    "session_id": "S1001", 
@@ -249,7 +249,7 @@
 
 ## Response export\_api Example
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",

@@ -45,7 +45,7 @@ esignon 에서 발급받은 ID
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "",
@@ -67,7 +67,7 @@ esignon 에서 발급받은 ID
 
 Example\) Request Body
 
-```text
+```javascript
 {
   "client_id":"{발급받은 클라이언트 ID}",
 	"workflow_id": "{완료 된 문서의 ID 값}"
@@ -76,7 +76,7 @@ Example\) Request Body
 
 Example\) Response Body / Error
 
-```text
+```javascript
 {
     "header":{
         "response_code": "",

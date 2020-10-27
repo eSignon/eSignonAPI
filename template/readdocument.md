@@ -48,7 +48,7 @@
 
 ## 요청 Body 예시\)
 
-```text
+```javascript
 {
         "header": {
                 "request_code": "1123Q",
@@ -85,15 +85,15 @@
 
 ## 응답 Body 예시\)
 
-```text
+```javascript
 {
 	"body":{
 		"comp_id": "{회사 ID}",
 		"biz_id": "0",
 		"memb_email": "{사용자 이메일}",
 		"search_dir_id": "all",
-		"file_list":[{서식 정보 // Example} file_lsit 참조}] 서식 전체 조회이기 때문에 모든 서식 데이터
-	},
+		"file_list":[{//서식 정보  Example} file_lsit 참조}] 서식 전체 조회이기 때문에 모든 서식 데이터
+	}],
 	"header":{
 		"session_id": "session_id",
 		"response_code": "1123A",
@@ -107,7 +107,7 @@
 
 #### Example\) file\_list
 
-```text
+```javascript
 {
 	"file_id": "{서식ID}",
 	"file_type": "templete",

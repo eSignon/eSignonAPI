@@ -47,7 +47,7 @@
 
 ## 요청 Body 예시\)
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "1429Q",
@@ -82,7 +82,7 @@
 
 ## 응답 Body 예시\)
 
-```text
+```javascript
 {
 	"header":{
 		"session_id": "thread_023",

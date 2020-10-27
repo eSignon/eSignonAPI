@@ -52,7 +52,7 @@ application/json
 성공
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "header": {
     "response_code": "1001A",
@@ -76,7 +76,7 @@ application/json
 
 ## Request Body Example
 
-```text
+```javascript
 {
   "header": {
     "request_code": "1001Q",
@@ -90,7 +90,7 @@ application/json
 
 ## Response Body Example
 
-```text
+```javascript
 {
   "header": {
     "response_code": "1001A",

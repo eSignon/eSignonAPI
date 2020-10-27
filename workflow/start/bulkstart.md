@@ -169,7 +169,7 @@
 
 ## 요청 Body 예시\)
 
-```text
+```javascript
 {
   "header": {
     "request_code": "1410Q",
@@ -183,8 +183,7 @@
     "memb_email": "{ 사용자 이메일 }",
     "workflow_lib_id": "{ 서식의 lib_id }",
     "workflow_name": "",
-    "unset_player_list": [
-      {
+    "unset_player_list": [{
         "memb_id_type" : "{ EMail or Mobile }",
         "email": "{ memb_id_type 에 따라 번호나 이메일 }",
         "name" : "{ 받는 사람 이름 }",
@@ -199,9 +198,8 @@
       				"doc_id": "{ 서식 ID }",
       				"field_name": "{ 서식 필드명 }",
       				"field_value": "{ 서식 필드 값 }"
-			}]
-      }
-      ],// unset_player_list에 들어있는 모든 고객에게 계약 전송
+			  }]
+      }],// unset_player_list에 들어있는 모든 고객에게 계약 전송
     "comment": "",
     "enable_legal_agreement":"false"
   }
@@ -230,7 +228,7 @@
 
 ## 응답 Body 예시\)
 
-```text
+```javascript
 }
 	"body":{
 		"workflow_list":[

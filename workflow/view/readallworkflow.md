@@ -37,7 +37,7 @@ esignon {발급받은토큰값}
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "/worklists/new",
@@ -53,20 +53,20 @@ esignon {발급받은토큰값}
 		"rows": "{페이지 당 보여줄 목록의 갯수}",
 		"total": "{전체 문서 수}",
 		"workflow_list":[{
-			"wfuid": {문서 ID},
+			"wfuid": "{문서 ID}",
 			"wfname": "{문서 제목}",
 			"wftype": "{문서 타입}",
 			"status": "{문서 상태}",
 			"step": "{문서 단계}",
 			"nickname": "{문서 작성자}",
-			"currentactionid": {계약 중인 단계 번호},
+			"currentactionid": "{계약 중인 단계 번호}",
 			"email": "{문서 작성자 이메일}",
 			"startdate": "{문서 시작일}",
-			"totalprocesscount": {문서의 총 단계 갯수},//3단계 문서일 경우 3
-			"currentprocesscount": {완료 된 계약 단계 번호},
+			"totalprocesscount": "{문서의 총 단계 갯수}",//3단계 문서일 경우 3
+			"currentprocesscount": "{완료 된 계약 단계 번호}",
 			"confirmdate": "{문서 완료일}",
-			"preactionid": {},
-			"preactionemail":{참조하는 이메일}
+			"preactionid": "{}",
+			"preactionemail":"{참조하는 이메일}"
 			}]
 	}
 }

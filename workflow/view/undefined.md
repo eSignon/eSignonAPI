@@ -32,7 +32,7 @@ esignon {token} / 값 입력시 띄어쓰기는 필수입니다.
 Response Body 예시\)
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "header":{
         "response_code": "",

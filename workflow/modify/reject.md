@@ -52,7 +52,7 @@
 
 ## 요청 Body 예시\)
 
-```text
+```javascript
 {
  "header" : {
    "request_code" : "5010Q",            
@@ -93,7 +93,7 @@
 
 ## 응답 Body 예시\)
 
-```text
+```javascript
 {
 	"header":{
 		"response_code": "5010A",

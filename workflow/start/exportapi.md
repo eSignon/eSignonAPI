@@ -98,7 +98,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 
 ## export\_api Response\) 
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -116,8 +116,8 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
 		"opinion": "", //승인, 반려시 고객들이 반려 메세지,전송 메세지를 사용한 경우 출력
-		"param_id": "param_value", // 서식에 field_name으로 등록한 필드 박스의 값이 없을경우 param_id:param_value return / 
-																 값이 있을경우엔 param_id:field_value를 return
+		"param_id": "param_value", // 서식에 field_name으로 등록한 필드 박스의 값이 없을경우 param_id:param_value return  
+															 //	값이 있을경우엔 param_id:field_value를 return
 		"status":"{Playing}", // 진행 상태 - Playing 진행중 / Complete 완료 / Canceled 취소됨
 	}
 }
@@ -125,7 +125,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 
 ## export\_api 응답 예시\) code-embed 상태 일 때 \( 진행중 \)
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -139,8 +139,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"requestid": "{ embed로 고정 }",
 		"actionid": "1", //이싸인온에서 사용하는 action 구분값
 		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간
-		"worktype": "CF", 
-//CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
+		"worktype": "CF", //CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
 		"opinion": "", //승인, 반려시 고객들이 반려 메세지,전송 메세지를 사용한 경우 출력
@@ -156,7 +155,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 
 ## export\_api 응답 예시\) code-embed 상태 일 때 \( 완료 \)
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -170,8 +169,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"requestid": "{ embed로 고정 }",
 		"actionid": "1", //이싸인온에서 사용하는 action 구분값
 		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간
-		"worktype": "CF", 
-//CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
+		"worktype": "CF", //CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
 		"opinion": "", //승인, 반려시 고객들이 반려 메세지,전송 메세지를 사용한 경우 출력
