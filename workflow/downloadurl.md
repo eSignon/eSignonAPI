@@ -44,7 +44,7 @@ esignonから発行されたID
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "",
@@ -66,7 +66,7 @@ esignonから発行されたID
 
 Example\) Request Body
 
-```text
+```javascript
 {
   "client_id":"{esignonから発行されたID}",
 	"workflow_id": "{完了した文書のID}"
@@ -75,7 +75,7 @@ Example\) Request Body
 
 Example\) Response Body / Error
 
-```text
+```javascript
 {
     "header":{
         "response_code": "",

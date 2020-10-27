@@ -76,7 +76,7 @@
 
 ## Request Body Example
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -90,7 +90,7 @@
 		"language": "ja-JP",
 		"comment": "",
 		"player_list": [{
-			"field_owner": "1",(step)
+			"field_owner": "1",//(step)
 			"email": "{ 署名者 Email }",
       "name":"{ 署名者 name }",
 			"language": "{ ja-JP }",
@@ -137,7 +137,7 @@
 
 ## Request Body Example - only Required
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -164,7 +164,7 @@
 
 ## Request Body Example - For TEST Account
 
-```text
+```javascript
 {
 	"header": {
 		"request_code": "5005Q",
@@ -223,7 +223,7 @@
 
 ## Response Body Example
 
-```text
+```javascript
 { 
  "header":{
    "session_id": "S1001", 
@@ -246,7 +246,7 @@
 
 ## Response export\_api Example
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",

@@ -52,7 +52,7 @@
 
 ## Request Body 例\)
 
-```text
+```javascript
 {
  "header" : {
    "request_code" : "5009Q",
@@ -96,7 +96,7 @@
 
 ## Response Body 例\)
 
-```text
+```javascript
 {
 	"header":{
 		"response_code": "5009A",

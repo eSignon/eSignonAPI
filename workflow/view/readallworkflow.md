@@ -37,7 +37,7 @@ esignon {accesstoken}
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"header":{
 		"response_code": "/worklists/new",
@@ -53,20 +53,20 @@ esignon {accesstoken}
 		"rows": "{ページあたりの表示リストの数}",
 		"total": "{全文書数}",
 		"workflow_list":[{
-			"wfuid": {文書ID},
+			"wfuid": "{文書ID}",
 			"wfname": "{文書のタイトル}",
 			"wftype": "{文書タイプ}",
 			"status": "{文書状態}",
 			"step": "{文書段階}",
 			"nickname": "{文書作成者}",
-			"currentactionid": {契約中の段階番号},
+			"currentactionid": "{契約中の段階番号}",
 			"email": "{文書作成者Eメール}",
 			"startdate": "{文書開始日}",
-			"totalprocesscount": {文書の総工数},
-			"currentprocesscount": {完了した契約段階番号},
+			"totalprocesscount": "{文書の総工数}",
+			"currentprocesscount": "{完了した契約段階番号}",
 			"confirmdate": "{文書完了日}",
 			"preactionid": {},
-			"preactionemail":{参照のEメール}
+			"preactionemail":"{参照のEメール}"
 			}]
 	}
 }

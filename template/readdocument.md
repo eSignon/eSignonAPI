@@ -48,7 +48,7 @@
 
 ## Request Body 例\)
 
-```text
+```javascript
 {
         "header": {
                 "request_code": "1123Q",
@@ -85,7 +85,7 @@
 
 ## Response Body 例\)
 
-```text
+```javascript
 {
 	"body":{
 		"comp_id": "{会社ID}",
@@ -107,7 +107,7 @@
 
 #### Example\) file\_list
 
-```text
+```javascript
 {
 	"file_id": "{書式ID}",
 	"file_type": "書式",

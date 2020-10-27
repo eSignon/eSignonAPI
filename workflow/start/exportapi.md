@@ -25,7 +25,7 @@ embed Code を使用する場合は、最初の非対面契約の呼び出し時
 
 ## export\_api Response\) 
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -50,7 +50,7 @@ embed Code を使用する場合は、最初の非対面契約の呼び出し時
 
 ## Export\_api Response 例\) code-embed 状態のとき \(進行中\)
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",
@@ -80,7 +80,7 @@ embed Code を使用する場合は、最初の非対面契約の呼び出し時
 
 ## Export\_api Response 例）code-embed 状態のとき（完了）
 
-```text
+```javascript
 {
 	"header": {
 		"api_name": "export",

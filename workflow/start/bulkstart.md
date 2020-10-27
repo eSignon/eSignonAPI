@@ -61,7 +61,7 @@
 
 ## Request Body Example
 
-```text
+```javascript
 {
   "header": {
     "request_code": "1410Q",
@@ -122,7 +122,7 @@
 
 ## Response Body Example
 
-```text
+```javascript
 }
 	"body":{
 		"workflow_list":[

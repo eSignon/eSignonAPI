@@ -47,7 +47,7 @@
 
 ## Request Body 例\)
 
-```text
+```javascript
 {
 	"header": {
 			"request_code": "1510Q",
@@ -86,7 +86,7 @@
 
 ## Response Body 例\)
 
-```text
+```javascript
 {
 	"header":{
 		"session_id": "session_id",
