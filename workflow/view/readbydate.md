@@ -20,10 +20,10 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | "application/json" |
-| Authorization | String | "esignon 발급받은 Token" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | "application/json" |
+| Authorization | String | Required | "esignon 발급받은 Token" |
 
 ####   Body 
 

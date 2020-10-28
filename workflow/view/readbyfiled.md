@@ -1,7 +1,10 @@
 # 특정필드 값으로 조회
 
 * 특정필드값으로 조회합니다. 
-* Ex\) A서식중 Name 필드 값이 “아무개”인 문서만 조회
+* field\_name 으로 설정 된 필드에 field\_value 로 설정한 값을 조회합니다.
+* field\_name 과 field\_value 는 각각 단일로 사용할 수 있습니다. 
+* field\_name 만 설정했을 경우 - 지정된 필드 중 매칭되는 field\_name을 가지고있는 모든 문서 조회
+* field\_value 만 설정했을 경우 - 지정된 필드 값 중 매칭되는 field\_value를 가지고있는 모든 문서 조회 
 
 ## API 속성-
 
@@ -21,32 +24,32 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | application/json |
-| Authorization | String | esignon {token} |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | application/json |
+| Authorization | String | Required | esignon {token} |
 
 ####   Body 
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | 5008Q |
-| api\_name | String | start api |
-| session\_id | String | "" |
-| version | String | 1.1.60 |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | 5008Q |
+| api\_name | String | Required | start api |
+| session\_id | String | Required | "" |
+| version | String | Required | 1.1.60 |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | 회사 ID |
-| client\_id | String | esignon 에서 발급받은 ID \( 발급은 문의 \) |
-| field\_list | Data | 조회할 문서 정보 |
-| field\_list.doc\_uid | String | 조회할 문서의 서식 ID |
-| field\_list.field\_name | String | 조회할 문서 서식의 필드 이름 |
-| field\_list.field\_value | String | 조회할 문서 서식의 필드  |
+| **Parameter Name** | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| comp\_id | String | Required | 회사 ID |
+| client\_id | String | Required | esignon 에서 발급받은 ID \( 발급은 문의 \) |
+| field\_list | Data | Required | 조회할 문서 정보 |
+| field\_list.doc\_uid | String | Required | 조회할 문서의 서식 ID |
+| field\_list.field\_name | String | Optional | 조회할 문서 서식의 필드 이름 |
+| field\_list.field\_value | String | Optional | 조회할 문서 서식의 필드  |
 
 ## 요청 Body 예시\)
 
