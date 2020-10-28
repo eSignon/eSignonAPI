@@ -20,35 +20,34 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | "application/json" |
-| Authorization | String | "esignon {accesstoken}" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | "application/json" |
+| Authorization | String | Required | "esignon {accesstoken}" |
 
 ####   Body 
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | "5009Q" |
-| api\_name | String | "start api" |
-| session\_id | String | "" |
-| version | String | "1.1.60" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | "5009Q" |
+| api\_name | String | Required | "start api" |
+| session\_id | String | Required | "" |
+| version | String | Required | "1.1.60" |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | 会社ID |
-| doc\_uid | Stirng | 照会する文書の書式ID |
-| client\_id | String |  esignonから発行されたID\(発行は[お問い合わせ](https://esignon.net/jp/customer/)\) |
-| search\_date\_type | String | START or END START – 文書開始基準 END – 文書完了基準 |
-| start\_date | String | 検索スタート地点 YYYY-MM-DD |
-| end\_date | String | 検索終了地点 YYYY-MM-DD |
-| field\_list | Data | 照会する文書情報 |
-| field\_list.doc\_uid | String | 照会する文書の書式ID |
-| field\_list.field\_name | String | 照会する文書書式のフィールド名 |
+| **Parameter Name** | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| comp\_id | String | Required | 会社ID |
+| client\_id | String | Required |  esignonから発行されたID\(発行は[お問い合わせ](https://esignon.net/jp/customer/)\) |
+| search\_date\_type | String | Optional | START or END START – 文書開始基準 END – 文書完了基準 |
+| start\_date | String | Required | 検索スタート地点 YYYY-MM-DD |
+| end\_date | String | Required | 検索終了地点 YYYY-MM-DD |
+| field\_list | Data | Required | 照会する文書情報 |
+| field\_list.doc\_uid | String | Required | 照会する文書の書式ID |
+| field\_list.field\_name | String | Optional | 照会する文書書式のフィールド名 |
 
 ## Request Body 例\)
 

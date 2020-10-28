@@ -21,32 +21,32 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | application/json |
-| Authorization | String | esignon {token} |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | application/json |
+| Authorization | String | Required | esignon {token} |
 
 ####   Body 
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | 5008Q |
-| api\_name | String | start api |
-| session\_id | String | "" |
-| version | String | 1.1.60 |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | 5008Q |
+| api\_name | String | Required | start api |
+| session\_id | String | Required | "" |
+| version | String | Required | 1.1.60 |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | 会社ID |
-| client\_id | String |  esignonから発行されたID\(発行は[お問い合わせ](https://esignon.net/jp/customer/)\) |
-| field\_list | Data | 照会する文書情報 |
-| field\_list.doc\_uid | String | 照会する文書の書式ID |
-| field\_list.field\_name | String | 照会する文書書式のフィールド名 |
-| field\_list.field\_value | String | 照会する文書書式のフィールド値 |
+| **Parameter Name** | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| comp\_id | String | Required | 会社ID |
+| client\_id | String | Required |  esignonから発行されたID\(発行は[お問い合わせ](https://esignon.net/jp/customer/)\) |
+| field\_list | Data | Required | 照会する文書情報 |
+| field\_list.doc\_uid | String | Required | 照会する文書の書式ID |
+| field\_list.field\_name | String | Optional | 照会する文書書式のフィールド名 |
+| field\_list.field\_value | String | Optional | 照会する文書書式のフィールド値 |
 
 ## Request Body 例
 
