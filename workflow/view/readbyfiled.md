@@ -21,32 +21,32 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | application/json |
-| Authorization | String | esignon {token} |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | application/json |
+| Authorization | String | Required | esignon {token} |
 
 ####   Body 
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | 5008Q |
-| api\_name | String | start api |
-| session\_id | String | "" |
-| version | String | 1.1.60 |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | 5008Q |
+| api\_name | String | Required | start api |
+| session\_id | String | Required | "" |
+| version | String | Required | 1.1.60 |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | Company ID |
-| client\_id | String |  ID issued by esignon \([question](https://esignon.net/en/customer/) for issue\) |
-| field\_list | Data | Information of the document to search |
-| field\_list.doc\_uid | String | Templete ID of the document to search |
-| field\_list.field\_name | String | Templete field name of the document to search |
-| field\_list.field\_value | String | Templete field value  of the document to search |
+| **Parameter Name** | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| comp\_id | String | Required | Company ID |
+| client\_id | String | Required |  ID issued by esignon \([question](https://esignon.net/en/customer/) for issue\) |
+| field\_list | Data | Required | Information of the document to search |
+| field\_list.doc\_uid | String | Required | Templete ID of the document to search |
+| field\_list.field\_name | String | Optional | Templete field name of the document to search |
+| field\_list.field\_value | String | Optional | Templete field value  of the document to search |
 
 ## Request Body Example
 

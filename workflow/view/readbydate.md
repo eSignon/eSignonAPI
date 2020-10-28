@@ -20,35 +20,34 @@
 
 ####  Headers
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| Content-Type | String | "application/json" |
-| Authorization | String | "esignon accesstoken" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| Content-Type | String | Required | "application/json" |
+| Authorization | String | Required | "esignon accesstoken" |
 
 ####   Body 
 
   Body - Header Parameter
 
-| **Parameter Name**                         | DataType | **Description** |
-| :--- | :--- | :--- |
-| request\_code | String | "5009Q" |
-| api\_name | String | "start api" |
-| session\_id | String | "" |
-| version | String | "1.1.60" |
+| **Parameter Name**                         | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| request\_code | String | Required | "5009Q" |
+| api\_name | String | Required | "start api" |
+| session\_id | String | Required | "" |
+| version | String | Required | "1.1.60" |
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | Company ID |
-| doc\_uid | Stirng | Templete ID of the document to search |
-| client\_id | String |  ID issued by esignon \([question](https://esignon.net/en/customer/) for issue\) |
-| search\_date\_type | String | START or END / START – based on the start of the document  / END – based on the end of the document |
-| start\_date | String | Search Start Point YYYY-MM-DD |
-| end\_date | String | Search End Point YYYY-MM-DD |
-| field\_list | Data | Information of the document to search |
-| field\_list.doc\_uid | String | Templete ID of the document to search |
-| field\_list.field\_name | String | Templete field name of the document to search |
+| **Parameter Name** | DataType | Required | **Description** |
+| :--- | :--- | :--- | :--- |
+| comp\_id | String | Required | Company ID |
+| client\_id | String | Required |  ID issued by esignon \([question](https://esignon.net/en/customer/) for issue\) |
+| search\_date\_type | String | Optional | START or END / default - END START – based on the start of the document  END – based on the end of the document |
+| start\_date | String | Required | Search Start Point YYYY-MM-DD |
+| end\_date | String | Required | Search End Point YYYY-MM-DD |
+| field\_list | Data | Required | Information of the document to search |
+| field\_list.doc\_uid | String | Required | Templete ID of the document to search |
+| field\_list.field\_name | String | Optional | Templete field name of the document to search |
 
 ## Request Body Example\)
 
