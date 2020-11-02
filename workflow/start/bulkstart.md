@@ -134,23 +134,23 @@
       <td style="text-align:left">&#xBE44;&#xBC00;&#xBC88;&#xD638;</td>
     </tr>
     <tr>
-      <td style="text-align:left">field_list</td>
+      <td style="text-align:left">unset_player_list.field_list</td>
       <td style="text-align:left">Data</td>
       <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;&#xACBD;&#xC6B0;
         &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12;</td>
     </tr>
     <tr>
-      <td style="text-align:left">field_list.doc_id</td>
+      <td style="text-align:left">unset_player_list.field_list.doc_id</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">&#xC11C;&#xC2DD; ID</td>
     </tr>
     <tr>
-      <td style="text-align:left">field_list.field_name</td>
+      <td style="text-align:left">unset_player_list.field_list.field_name</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xC774;&#xB984;</td>
     </tr>
     <tr>
-      <td style="text-align:left">field_list.field_value</td>
+      <td style="text-align:left">unset_player_list.field_list.field_value</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC;</td>
     </tr>
