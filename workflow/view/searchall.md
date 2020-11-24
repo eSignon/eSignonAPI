@@ -58,3 +58,15 @@ Response Body 예시\)
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
+### Parameter Info
+
+| **Name**                         | **Value**                                                 | **Description** |
+| :--- | :--- | :--- |
+| status | Playing | 진행중 |
+|  | Canceled | 취소 |
+|  | Complete | 완료 |
+|  | Disposal | 폐기 |
+|  | Truncate | \(취소 상태 후 삭제한 경우\) |
+
