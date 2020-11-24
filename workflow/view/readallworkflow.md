@@ -84,7 +84,8 @@ esignon {발급받은토큰값}
 | Workflow\_list.status | Playing | 진행중 |
 |  | Canceled | 취소 |
 |  | Complete | 완료 |
-|  | Truncate | 폐기 |
+|  | Disposal | 폐기 |
+|  | Truncate | \(취소 상태 후 삭제한 경우\) |
 | Workflow\_list.wftype | NORMAL | 일반 발송 문서 |
 |  | BULKWEB | 대량 발송 문서 |
 | Workflow\_list.step | Myturn | 내 차례 |
