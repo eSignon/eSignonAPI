@@ -5,7 +5,7 @@ ExportAPI 란 비대면 계약시작시 export\_api\_info Parameter 값을 통�
 request\_code 에 사용자 정의 대신 "embed" 를 입력 할 경우 계약서 진행 URL을 export 해주며 카카오톡 및 이메일 알림이 계약자에게 발송되지 않습니다. export 받은 URL을 기반으로 고객측에서 발송을 따로               진행 할 수 있습니다.  
 
 embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 계약 시작 URL을 제공하며 계약을         진행 시 서명자가 계약서를 승인, 반려 할 때마다 export 로 진행 URL 과 입력하셨던 계약자의  번호  또는   이메일을 제공합니다. \( 이메일로 호출한 경우 이메일, 번호로 호출한 경우 번호 \) 계약 완료시엔                   문서 다운로드가 가능하도록 문서 다운로드, 이력 인증서 다운로드 URL을 제공합니다.   
-※ 계약 완료시 받을수 있는 URL 형식은 link\_type 옵션으 viewer, download 중 하나로 선택가능합니다.
+※ 계약 완료시 받을수 있는 URL 형식은 link\_type 옵션으로 viewer, download 중 하나로 선택가능합니다.
 
 ## Parameter 
 
