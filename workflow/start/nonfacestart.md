@@ -58,7 +58,7 @@
 | field\_list | Array | Optional | 미리 입력할 값이 있을 경우 추가하는 값 RadioBox,CheckBox,LabelBox ,TextBox 만 미리 값 입력가능 |
 | field\_list.field\_name | String | Optional | 서식 필드 이름 |
 | field\_list.field\_value | String | Optional | 서식 필드 값 Radio,Check Box 의 경우 값을 \(“N” or ”Y”\) 로 수신 Label,Text Box 의 경우 텍스트 값을 그대로 수신 |
-| export\_api\_info | Array | Optional | 작성 데이터를 내보낼시에 설정하는 값 |
+| export\_api\_info | Object | Optional | 작성 데이터를 내보낼시에 설정하는 값 |
 | export\_api\_info.api\_type | String | Required | "StartAndEnd"\(시작과 끝만\) or "ALL" \(전부\)  |
 | export\_api\_info.url | String | Required | 통신 받을 url |
 | export\_api\_info.link\_type | String | Optional | embed 전용옵션  문서 완료 시 이력인증서,  PDF 문서 URL의 type을 변경 default - viewer URL "download"  - download URL |
