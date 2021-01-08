@@ -38,13 +38,56 @@
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | **Description** |
-| :--- | :--- | :--- |
-| comp\_id | String | 회사 ID |
-| memb\_email | Stirng | 사용자 이메일 |
-| biz\_id | String | "0" |
-| search\_dir\_id | String | 서식을 찾을 폴더 ID / "all"\(공유폴더\),"my"\(내 폴더\) |
-| display\_order\_mode | String | 정렬기준값 Response file\_list 필드값 순서대로 1~11 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter Name</b>
+      </th>
+      <th style="text-align:left">DataType</th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">comp_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">&#xD68C;&#xC0AC; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">memb_email</td>
+      <td style="text-align:left">Stirng</td>
+      <td style="text-align:left">&#xC0AC;&#xC6A9;&#xC790; &#xC774;&#xBA54;&#xC77C;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">biz_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">&quot;0&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">search_dir_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">&#xC11C;&#xC2DD;&#xC744; &#xCC3E;&#xC744; &#xD3F4;&#xB354; ID / &quot;all&quot;(&#xACF5;&#xC720;&#xD3F4;&#xB354;),&quot;my&quot;(&#xB0B4;
+        &#xD3F4;&#xB354;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">display_order_mode</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">
+        <p>&#xC815;&#xB82C;&#xAE30;&#xC900;&#xAC12;</p>
+        <p>2 &#xC11C;&#xC2DD; &#xC0DD;&#xC131;&#xC77C; &#xC624;&#xB984;&#xCC28;&#xC21C;</p>
+        <p>3 &#xC11C;&#xC2DD;&#xBA85; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;</p>
+        <p>4 &#xC11C;&#xC2DD;&#xBA85; &#xC624;&#xB984;&#xCC28;&#xC21C;</p>
+        <p>5 &#xC11C;&#xC2DD;ID &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;</p>
+        <p>6 &#xC11C;&#xC2DD;ID &#xC624;&#xB984;&#xCC28;&#xC21C;</p>
+        <p>7 &#xC11C;&#xC2DD;&#xD0C0;&#xC785; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;</p>
+        <p>8 &#xC11C;&#xC2DD;&#xD0C0;&#xC785; &#xC624;&#xB984;&#xCC28;&#xC21C;</p>
+        <p>9 &#xBB38;&#xC11C;&#xC791;&#xC131;&#xC790;&#xC218; &#xB0B4;&#xB9BC;&#xCC28;&#xC21C;</p>
+        <p>10 &#xBB38;&#xC11C;&#xC791;&#xC131;&#xC790;&#xC218; &#xC624;&#xB984;&#xCC28;&#xC21C;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 요청 Body 예시\)
 
@@ -61,7 +104,7 @@
                  "biz_id": "0",
                  "memb_email" : "{사용자 이메일}",
                  "search_dir_id": "all", // all ( 공유폴더 ) , my ( 내 폴더 )
-                 "display_order_mode": "1" // 정렬 기준값 1 ~ 11
+                 "display_order_mode": "2" // 2 ~ 10
         }
 }
 
