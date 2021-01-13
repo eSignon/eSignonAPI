@@ -60,7 +60,7 @@
 | export\_api\_info | Array | Optional | 作成データをエクスポートする時に設定する値 |
 | export\_api\_info.api\_type | String | Required | "StartAndEnd"\(始まりと終わりだけ\) or "ALL"\(全て\) |
 | export\_api\_info.url | String | Required | 通信を受けるurl |
-| export\_api\_info.request\_code | String | Optional | 顧客が定義する任意のvalue or "embed" \(Export APIの説明参照\) |
+| export\_api\_info.request\_code | String | Required | 顧客が定義する任意のvalue or "embed" \(Export APIの説明参照\) |
 | export\_api\_info.clientid | String | Optional | esignonから発行されたID\(発行は[お問い合わせ](https://esignon.net/jp/customer/)\) |
 | export\_api\_info.authorization | String | Optional | データの受信時にヘッダーauthorizationに設定したいvalue |
 | export\_api\_info.request\_params | Array | Optional | 文書の内部に特定の値を受け取りたいときに使用 |
