@@ -62,7 +62,7 @@
 | export\_api\_info.api\_type | String | Required | "StartAndEnd"\(시작과 끝만\) or "ALL" \(전부\)  |
 | export\_api\_info.url | String | Required | 통신 받을 url |
 | export\_api\_info.link\_type | String | Optional | embed 전용옵션  문서 완료 시 이력인증서,  PDF 문서 URL의 type을 변경 default - viewer URL "download"  - download URL |
-| export\_api\_info.request\_code | String | Optional | 고객이 정의하는 임의의 값 or "embed"\( ExportAPI 설명 참조\) |
+| export\_api\_info.request\_code | String | Required | 고객이 정의하는 임의의 값 or "embed"\( ExportAPI 설명 참조\) |
 | export\_api\_info.clientid | String | Optional | esignon 에서 발급받은 ID \( 발급은 문의 \) |
 | export\_api\_info.authorization | String | Optional | 데이터를 수신받을때 헤더 authorization 로 설정하고 싶은 값 |
 | export\_api\_info.request\_params | Array | Optional | 문서내부에 특정 값을 받아 오고싶을때 사용 |
