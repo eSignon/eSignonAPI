@@ -60,7 +60,7 @@
 | export\_api\_info | Array | Optional | The value set when exporting the written data |
 | export\_api\_info.api\_type | String | Required | "StartAndEnd" \(only start and end\) or "ALL" \(all\) |
 | export\_api\_info.url | String | Required | URL to receive data from |
-| export\_api\_info.request\_code | String | Optional | The arbitrary value defined by the customer |
+| export\_api\_info.request\_code | String | Required | The arbitrary value defined by the customer |
 | export\_api\_info.clientid | String | Optional | ID issued by esignon \([question ](https://esignon.net/en/customer/)for issue\) |
 | export\_api\_info.authorization | String | Optional | The value you want to set to header authorization when receiving data |
 | export\_api\_info.request\_params | Array | Optional | Use when you want to get a specific value inside a document. |
