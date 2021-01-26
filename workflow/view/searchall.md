@@ -49,7 +49,8 @@ Response Body 예시\)
         "start_date": "{문서 생성 시간}",
         "status": "{현재 문서의 상태}",
         "workflow_id": "{문서 ID}",
-        "workflow_name": "{문서 제목}"
+        "workflow_name": "{문서 제목}",
+        "doc_uid": "{서식 ID}"
     }
 }
 ```
