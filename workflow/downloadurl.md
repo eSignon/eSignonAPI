@@ -19,8 +19,8 @@ workflow\_download
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-**esignon {token}  
- / 값 입력시 띄어쓰기는 필수입니다.**
+esignon ${발급받은토큰}  
+ **/ 값 입력시 띄어쓰기는 필수입니다.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=true %}
