@@ -26,7 +26,7 @@
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-esignon {발급받은토큰값} 
+esignon {token} 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}

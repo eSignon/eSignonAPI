@@ -23,7 +23,7 @@
 | **Parameter Name**                         | DataType | **Description** |
 | :--- | :--- | :--- |
 | Content-Type | String | "application/json" |
-| Authorization | String | "esignon 발급받은 Token" |
+| Authorization | String | "esignon {token}" |
 
 ####   Body 
 
