@@ -79,11 +79,11 @@ application/json
 ```javascript
 {
   "header": {
-    "request_code": "1001Q",
+    "request_code": "1001Q"
   },
   "body": {
     "memb_email": "{사용자 이메일}",
-    "memb_pwd": "{사용자 비밀번호}",
+    "memb_pwd": "{사용자 비밀번호}"
   }
 }
 ```
