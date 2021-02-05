@@ -25,8 +25,12 @@
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+application/json
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
-esignon ${발급받은토큰}
+esignon ${발급받토큰}
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
