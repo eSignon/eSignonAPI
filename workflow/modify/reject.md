@@ -7,7 +7,7 @@
 
 | Url | Type | **Code** |
 | :--- | :--- | :--- |
-| https://docs.esignon.net/api/{CompID}/action | POST | 5010Q |
+| https://docs.esignon.net/api/:companyId/action | POST | 5010Q |
 
 ## Request
 
@@ -17,7 +17,7 @@
 
 | **Parameter Name** | DataType | Required | **Description** |
 | :--- | :--- | :--- | :--- |
-| CompID | String | Required | 회사ID |
+| companyId | String | Required | 회사ID |
 
 ####  Headers
 

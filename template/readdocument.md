@@ -103,8 +103,8 @@
                  "comp_id": "{회사 ID}",
                  "biz_id": "0",
                  "memb_email" : "{사용자 이메일}",
-                 "search_dir_id": "all", // all ( 공유폴더 ) , my ( 내 폴더 )
-                 "display_order_mode": "2" // 2 ~ 10
+                 "search_dir_id": "all",
+                 "display_order_mode": "2" 
         }
 }
 

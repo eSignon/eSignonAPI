@@ -6,7 +6,7 @@
 
 | Url | Type | **Code** |
 | :--- | :--- | :--- |
-| https://docs.esignon.net/api/{CompID}/search | POST | 5009Q |
+| https://docs.esignon.net/api/:companyId/search | POST | 5009Q |
 
 ## Request
 
@@ -16,7 +16,7 @@
 
 | **Parameter Name** | DataType | **Description** |
 | :--- | :--- | :--- |
-| CompID | String | 회사ID |
+| companyId | String | 회사ID |
 
 ####  Headers
 

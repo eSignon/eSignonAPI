@@ -7,7 +7,6 @@
 * 이싸인온 API 사용시 회사 고유의 클라이언트 ID가 필요합니다.  
 * 클라이언트 ID 발급은 [고객문의](https://esignon.net/customer/)를 이용 부탁드립니다.
 * 사용순서 \) 클라이언트 ID 발급\(회사문의\) -&gt; 인증토큰 발급 -&gt; 인증토큰을 이용하여 API 사용
-* companyId 의 경우 회사명이 아닌 웹페이지 내부의 설정 - 회사프로필 탭에 출력되는 ID를 지칭합니다.
 * **`※Header 토큰 값 입력 형식을 꼭 지켜주세요※`**
 
 ## Ex\) Header
@@ -30,6 +29,12 @@ Header 의 경우 최대 2개의 입력 값을 받으며 토큰 발급 API 를 �
 ```
 
 Body 의 경우 request 시에 위 처럼 body안에 header 값과 body 의 key,value를 각각 작성하여 요청하여야합니다. 안에 들어가는 key,value의 예시는 각 API에 명 되어있습니다
+
+## CompanyID 
+
+companyId 의 경우 회사명이 아닌 회사 고유의 ID를 지칭합니다. 아래의 화면에서 확인가능합니다.
+
+![](.gitbook/assets/compid.png)
 
 ## API List
 

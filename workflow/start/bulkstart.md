@@ -48,7 +48,7 @@
     <tr>
       <td style="text-align:left">comp_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xD68C;&#xC0AC; ID</td>
+      <td style="text-align:left">&#xD68C;&#xC0AC; ID / companyId</td>
     </tr>
     <tr>
       <td style="text-align:left">biz_id</td>
@@ -68,8 +68,12 @@
     <tr>
       <td style="text-align:left">workflow_lib_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xC11C;&#xC2DD;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xBA74; &#xC0DD;&#xC131;&#xB418;&#xB294;
-        lid_id</td>
+      <td style="text-align:left">
+        <p>&#xC11C;&#xC2DD;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xBA74; &#xC0DD;&#xC131;&#xB418;&#xB294;
+          lid_id
+          <br />&#xC11C;&#xC2DD;ID&#xC640;&#xB294; &#xB2E4;&#xB978;&#xAC12;&#xC785;&#xB2C8;&#xB2E4;.</p>
+        <p>(&#xC11C;&#xC2DD;&#xBAA9;&#xB85D;&#xC870;&#xD68C;&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">unset_player_list</td>
@@ -108,7 +112,7 @@
     <tr>
       <td style="text-align:left">unset_player_list.enable_mobile_cert</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xD734;&#xB300;&#xD3F0; &#xC778;&#xC99D; &#xAE30;&#xB2A5; &quot;True
+      <td style="text-align:left">&#xD734;&#xB300;&#xD3F0; &#xC778;&#xC99D; &#xAE30;&#xB2A5; &quot;true
         or false&quot;</td>
     </tr>
     <tr>
@@ -120,7 +124,7 @@
     <tr>
       <td style="text-align:left">unset_player_list.enable_password_cert</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC778;&#xC99D; &#xAE30;&#xB2A5; &quot;True
+      <td style="text-align:left">&#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC778;&#xC99D; &#xAE30;&#xB2A5; &quot;true
         or false&quot;</td>
     </tr>
     <tr>
@@ -136,8 +140,11 @@
     <tr>
       <td style="text-align:left">unset_player_list.field_list</td>
       <td style="text-align:left">Data</td>
-      <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;&#xACBD;&#xC6B0;
-        &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12;</td>
+      <td style="text-align:left">
+        <p>&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;&#xACBD;&#xC6B0;
+          &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12;</p>
+        <p>&#xC5EC;&#xB7EC;&#xAC1C; &#xCD94;&#xAC00;&#xAC00;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">unset_player_list.field_list.doc_id</td>
@@ -187,19 +194,19 @@
         "memb_id_type" : "{ EMail or Mobile }",
         "email": "{ memb_id_type 에 따라 번호나 이메일 }",
         "name" : "{ 받는 사람 이름 }",
-        "language": "ko-KR",//ko-KR, ja-JP, en-US
+        "language": "{ko-KR or ja-JP or en-US}",
         "workflow_name" : "{서식 이름}",
-        "enable_mobile_cert" : "{ 휴대폰 본인인증 여부 true or flase }",
+        "enable_mobile_cert" : "{ 휴대폰 본인인증 여부 true or false }",
         "mobile_number" : "{ 본인 인증에 사용할 전화번호 }",
         "enable_password_cert":"{true or false}",
 	      "password_hint":"{계약자가 볼 비밀번호 힌트}",  		
 	      "password":"{설정할 문서 비밀번호}",
-        "field_list": [{ // 서식에 값을 미리 입력할 경우 설정 여러 개 가능
+        "field_list": [{
       				"doc_id": "{ 서식 ID }",
       				"field_name": "{ 서식 필드명 }",
       				"field_value": "{ 서식 필드 값 }"
 			  }]
-      }],// unset_player_list에 들어있는 모든 고객에게 계약 전송
+      }],
     "comment": "",
     "enable_legal_agreement":"false"
   }
@@ -231,8 +238,7 @@
 ```javascript
 }
 	"body":{
-		"workflow_list":[
-			{
+		"workflow_list":[{
 			"workflow_id": "{문서ID}",
 			"unset_player_email": "{서명자 이메일 or 전화번호}",
 			"unset_player_name": "{서명자 이름}",

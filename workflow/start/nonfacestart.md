@@ -10,7 +10,7 @@
 
 | Url | Type | **Code** |
 | :--- | :--- | :--- |
-| https://docs.esignon.net/api/{CompID}/startsimple | POST | 5005Q |
+| https://docs.esignon.net/api/:companyId/startsimple | POST | 5005Q |
 
 ## Request
 
@@ -40,41 +40,251 @@
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | Required | **Description** |
-| :--- | :--- | :--- | :--- |
-| biz\_id | String | Required | "0" |
-| workflow\_name | String | Required | 시작할 문서 이름 |
-| doc\_id | String | Required | 시작할 서식 ID |
-| memb\_email | String | Required | 계약 시작자 이메일 |
-| language | String | Optional | "ko-KR", "en-US", "ja-JP" |
-| comment | String | Optional | 전달메시지 |
-| player\_list | Array | Required | 서명하는 고객의 정보를 입력  서식의 단계에 맞춰서 작성 필수  |
-| player\_list.field\_owner | String | Required | 작성 순서 " 1 " 부터 시작 |
-| player\_list.email | String | Required | 이메일 or 전화번호 |
-| player\_list.name | String | Required | 계약 진행자 이름 |
-| player\_list.mobile\_number | String | Optional | 본인인증에 사용할 번호 |
-| player\_list.password\_hint | String | Optional | 계약 진행시 사용할  비밀번호 힌트 |
-| player\_list.password | String | Optional | 계약 진행시 사용할 비밀번호 |
-| field\_list | Array | Optional | 미리 입력할 값이 있을 경우 추가하는 값 RadioBox,CheckBox,LabelBox ,TextBox 만 미리 값 입력가능 |
-| field\_list.field\_name | String | Optional | 서식 필드 이름 |
-| field\_list.field\_value | String | Optional | 서식 필드 값 Radio,Check Box 의 경우 값을 \(“N” or ”Y”\) 로 수신 Label,Text Box 의 경우 텍스트 값을 그대로 수신 |
-| export\_api\_info | Object | Optional | 작성 데이터를 내보낼시에 설정하는 값 |
-| export\_api\_info.api\_type | String | Required | "StartAndEnd"\(시작과 끝만\) or "ALL" \(전부\)  |
-| export\_api\_info.url | String | Required | 통신 받을 url |
-| export\_api\_info.link\_type | String | Optional | embed 전용옵션  문서 완료 시 이력인증서,  PDF 문서 URL의 type을 변경 default - viewer URL "download"  - download URL |
-| export\_api\_info.request\_code | String | Required | 고객이 정의하는 임의의 값 or "embed"\( ExportAPI 설명 참조\) |
-| export\_api\_info.clientid | String | Optional | esignon 에서 발급받은 ID \( 발급은 문의 \) |
-| export\_api\_info.authorization | String | Optional | 데이터를 수신받을때 헤더 authorization 로 설정하고 싶은 값 |
-| export\_api\_info.request\_params | Array | Optional | 문서내부에 특정 값을 받아 오고싶을때 사용 |
-| export\_api\_info.request\_params.param\_id | String | Required | 받아올 파라미터 이름\(사용자 지정\) |
-| export\_api\_info.request\_params.param\_value | String | Required | Params.fields에서 받아올 값이 문서에 없는경우 받아올 기본  |
-| export\_api\_info.request\_params.fields | Array | Required | 서식 내부에 있는 필드명을 조회하여 필드이름에 해당하는 값이 문서에 존재할 경우 param\_value 대신에 들어가는 값 |
-| export\_api\_info.request\_params.fields.doc\_id | String | Required | 서식 ID |
-| export\_api\_info.request\_params.fields.field\_name | String | Required | 값을 가져올 서식 내 필드 명 |
-| customer\_list | Array | Optional | 참조자가 있을 경우 추가 |
-| customer\_list.email | String | Required | 이메일 or 휴대폰번호 |
-| customer\_list.name | String | Required | 참조자 이름 |
-| customer\_list.language | String | Optional | ko-KR, en-US, ja-JP |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter Name</b>
+      </th>
+      <th style="text-align:left">DataType</th>
+      <th style="text-align:left">Required</th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">biz_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&quot;0&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">workflow_name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC2DC;&#xC791;&#xD560; &#xBB38;&#xC11C; &#xC774;&#xB984;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">doc_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC2DC;&#xC791;&#xD560; &#xC11C;&#xC2DD; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">memb_email</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xACC4;&#xC57D; &#xC2DC;&#xC791;&#xC790; &#xC774;&#xBA54;&#xC77C;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">language</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&quot;ko-KR&quot;, &quot;en-US&quot;, &quot;ja-JP&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">comment</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xC804;&#xB2EC;&#xBA54;&#xC2DC;&#xC9C0;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list</td>
+      <td style="text-align:left">Array</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC11C;&#xBA85;&#xD558;&#xB294; &#xACE0;&#xAC1D;&#xC758; &#xC815;&#xBCF4;&#xB97C;
+        &#xC785;&#xB825; &#xC11C;&#xC2DD;&#xC758; &#xB2E8;&#xACC4;&#xC5D0; &#xB9DE;&#xCDB0;&#xC11C;
+        &#xC791;&#xC131; &#xD544;&#xC218;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.field_owner</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC791;&#xC131; &#xC21C;&#xC11C; &quot; 1 &quot; &#xBD80;&#xD130; &#xC2DC;&#xC791;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.email</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC774;&#xBA54;&#xC77C; or &#xC804;&#xD654;&#xBC88;&#xD638;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xACC4;&#xC57D; &#xC9C4;&#xD589;&#xC790; &#xC774;&#xB984;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.mobile_number</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xBCF8;&#xC778;&#xC778;&#xC99D;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xBC88;&#xD638;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.password_hint</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xACC4;&#xC57D; &#xC9C4;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD560; &#xBE44;&#xBC00;&#xBC88;&#xD638;
+        &#xD78C;&#xD2B8;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">player_list.password</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xACC4;&#xC57D; &#xC9C4;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD560; &#xBE44;&#xBC00;&#xBC88;&#xD638;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list</td>
+      <td style="text-align:left">Array</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;
+        &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12; RadioBox,CheckBox,LabelBox
+        ,TextBox &#xB9CC; &#xBBF8;&#xB9AC; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list.field_name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xC774;&#xB984;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">field_list.field_value</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xAC12; Radio,Check Box &#xC758; &#xACBD;&#xC6B0;
+        &#xAC12;&#xC744; (&#x201C;N&#x201D; or &#x201D;Y&#x201D;) &#xB85C; &#xC218;&#xC2E0;
+        Label,Text Box &#xC758; &#xACBD;&#xC6B0; &#xD14D;&#xC2A4;&#xD2B8; &#xAC12;&#xC744;
+        &#xADF8;&#xB300;&#xB85C; &#xC218;&#xC2E0;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info</td>
+      <td style="text-align:left">Object</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xC791;&#xC131; &#xB370;&#xC774;&#xD130;&#xB97C; &#xB0B4;&#xBCF4;&#xB0BC;&#xC2DC;&#xC5D0;
+        &#xC124;&#xC815;&#xD558;&#xB294; &#xAC12;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.api_type</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&quot;StartAndEnd&quot;(&#xC2DC;&#xC791;&#xACFC; &#xB05D;&#xB9CC;) or
+        &quot;ALL&quot; (&#xC804;&#xBD80;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.url</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xD1B5;&#xC2E0; &#xBC1B;&#xC744; url</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.link_type</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">embed &#xC804;&#xC6A9;&#xC635;&#xC158;
+        <br />&#xBB38;&#xC11C; &#xC644;&#xB8CC; &#xC2DC; &#xC774;&#xB825;&#xC778;&#xC99D;&#xC11C;,
+        <br
+        />PDF &#xBB38;&#xC11C; URL&#xC758; type&#xC744; &#xBCC0;&#xACBD;
+        <br />default - viewer URL
+        <br />&quot;download&quot; - download URL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_code</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xACE0;&#xAC1D;&#xC774; &#xC815;&#xC758;&#xD558;&#xB294; &#xC784;&#xC758;&#xC758;
+        &#xAC12; or &quot;embed&quot;( ExportAPI &#xC124;&#xBA85; &#xCC38;&#xC870;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.clientid</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">esignon &#xC5D0;&#xC11C; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; ID ( &#xBC1C;&#xAE09;&#xC740;
+        &#xBB38;&#xC758; )</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.authorization</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">
+        <p>&#xB370;&#xC774;&#xD130;&#xB97C; &#xC218;&#xC2E0;&#xBC1B;&#xC744;&#xB54C;
+          &#xD5E4;&#xB354; authorization &#xB85C; &#xC124;&#xC815;&#xD558;&#xACE0;
+          &#xC2F6;&#xC740; &#xAC12;</p>
+        <p>(&#xC218;&#xC2E0;&#xCE21;&#xC5D0;&#xC11C; &#xC554;&#xD638;&#xD1A0;&#xD070;&#xC744;
+          &#xBC1B;&#xC544;&#xC11C; &#xBCF4;&#xC548;&#xC0C1; &#xD65C;&#xC6A9;&#xD558;&#xACE0;
+          &#xC2F6;&#xC73C;&#xC2E0;&#xACBD;&#xC6B0;)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params</td>
+      <td style="text-align:left">Array</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xBB38;&#xC11C;&#xB0B4;&#xBD80;&#xC5D0; &#xD2B9;&#xC815; &#xAC12;&#xC744;
+        &#xBC1B;&#xC544; &#xC624;&#xACE0;&#xC2F6;&#xC744;&#xB54C; &#xC0AC;&#xC6A9;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params.param_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xBC1B;&#xC544;&#xC62C; &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC774;&#xB984;(&#xC0AC;&#xC6A9;&#xC790;
+        &#xC9C0;&#xC815;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params.param_value</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">Params.fields&#xC5D0;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xAC12;&#xC774;
+        &#xBB38;&#xC11C;&#xC5D0; &#xC5C6;&#xB294;&#xACBD;&#xC6B0; &#xBC1B;&#xC544;&#xC62C;
+        &#xAE30;&#xBCF8;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params.fields</td>
+      <td style="text-align:left">Array</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC11C;&#xC2DD; &#xB0B4;&#xBD80;&#xC5D0; &#xC788;&#xB294; &#xD544;&#xB4DC;&#xBA85;&#xC744;
+        &#xC870;&#xD68C;&#xD558;&#xC5EC; &#xD544;&#xB4DC;&#xC774;&#xB984;&#xC5D0;
+        &#xD574;&#xB2F9;&#xD558;&#xB294; &#xAC12;&#xC774; &#xBB38;&#xC11C;&#xC5D0;
+        &#xC874;&#xC7AC;&#xD560; &#xACBD;&#xC6B0; param_value &#xB300;&#xC2E0;&#xC5D0;
+        &#xB4E4;&#xC5B4;&#xAC00;&#xB294; &#xAC12;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params.fields.doc_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC11C;&#xC2DD; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">export_api_info.request_params.fields.field_name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xAC12;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC11C;&#xC2DD; &#xB0B4; &#xD544;&#xB4DC;
+        &#xBA85;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">customer_list</td>
+      <td style="text-align:left">Array</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&#xCC38;&#xC870;&#xC790;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0; &#xCD94;&#xAC00;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">customer_list.email</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC774;&#xBA54;&#xC77C; or &#xD734;&#xB300;&#xD3F0;&#xBC88;&#xD638;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">customer_list.name</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xCC38;&#xC870;&#xC790; &#xC774;&#xB984;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">customer_list.language</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">ko-KR, en-US, ja-JP</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Request Body Example
 
@@ -95,7 +305,6 @@
 			"field_owner": "1",//(순서)
 			"email": "{ 받는 사람 email or 받는 사람 휴대폰 번호 }",
       "name":"{ 받는 사람 이름 }",
-			"language": "{ ko-KR }",
 			"mobile_number": "{ 휴대폰 본인인증시 사용할 휴대폰번호 }",
       "password_hint":"{ 비밀번호 힌트 }",
       "password":"{비밀번호}"
@@ -103,7 +312,6 @@
 			"field_owner": "2",
 			"email": "{}",
       "name":"{}",
-			"language": "{}",
 			"mobile_number": "{}",
       "password_hint":"{}",
       "password":"{}"
@@ -115,8 +323,7 @@
 		],
 		"customer_list": [{ // 참조자 리스트
 				"email": "{ id_type에 따라서 참조자 이메일 or 휴대폰번호 }",
-	      "name":"{ 참조자 이름 }",
-				"language": "{ko-KR}"
+	      "name":"{ 참조자 이름 }"
 		}],
 		"export_api_info": {
 				"api_type": "{ StartAndEnd or ALL }",
@@ -175,7 +382,6 @@
 		"version": "9.9.99"
 	},
 	"body": {
-		"comp_id": "testapi",
 		"biz_id": "0",
 		"memb_email": "guide@esignon.net",
 		"language": "ko-KR",
@@ -185,14 +391,12 @@
 		"player_list": [{
 				"field_owner": "1",
 				"email": "guide@esignon.net",
-				"name": "TEST",
-				"language": "ko-KR"
+				"name": "TEST"
 			},
 			{
 				"field_owner": "2",
 				"email": "guide@esignon.net",
-				"name": "TEST",
-				"language": "ko-KR"
+				"name": "TEST"
 			}
 		],
 		"field_list": [{
@@ -201,8 +405,7 @@
 		}],
 		"customer_list": [{
 			"email": "guide@esignon.net",
-			"name": "TEST",
-			"language": "ko-KR"
+			"name": "TEST"
 		}]
 	}
 }

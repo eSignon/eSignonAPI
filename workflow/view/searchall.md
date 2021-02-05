@@ -19,11 +19,11 @@ esignon {token} / 값 입력시 띄어쓰기는 필수입니다.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="workflow\_id" type="string" %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="workflow\_id" type="string" required=true %}
 문서 ID
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}

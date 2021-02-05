@@ -38,6 +38,18 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
       <td style="text-align:left">&#xD1B5;&#xC2E0; &#xBC1B;&#xC744; url</td>
     </tr>
     <tr>
+      <td style="text-align:left">export_api_info.authorization</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">
+        <p>&#xB370;&#xC774;&#xD130;&#xB97C; &#xC218;&#xC2E0;&#xBC1B;&#xC744;&#xB54C;
+          &#xD5E4;&#xB354; authorization &#xB85C; &#xC124;&#xC815;&#xD558;&#xACE0;
+          &#xC2F6;&#xC740; &#xAC12;</p>
+        <p>(&#xC218;&#xC2E0;&#xCE21;&#xC5D0;&#xC11C; &#xC554;&#xD638;&#xD1A0;&#xD070;&#xC744;
+          &#xBC1B;&#xC544;&#xC11C; &#xBCF4;&#xC548;&#xC0C1; &#xD65C;&#xC6A9;&#xD558;&#xACE0;
+          &#xC2F6;&#xC73C;&#xC2E0;&#xACBD;&#xC6B0;)</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">export_api_info.link_type</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">embed &#xC804;&#xC6A9;&#xC635;&#xC158;
