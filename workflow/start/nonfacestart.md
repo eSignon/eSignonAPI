@@ -302,7 +302,7 @@
 		"language": "ko-KR",
 		"comment": "",
 		"player_list": [{
-			"field_owner": "1",//(순서)
+			"field_owner": "1",
 			"email": "{ 받는 사람 email or 받는 사람 휴대폰 번호 }",
       "name":"{ 받는 사람 이름 }",
 			"mobile_number": "{ 휴대폰 본인인증시 사용할 휴대폰번호 }",
@@ -317,11 +317,11 @@
       "password":"{}"
 		}],
 		"field_list": [{
-				"field_name": "{ field_name }", //( 서식에 미리 값을 넣을 경우에만 사용 )
+				"field_name": "{ field_name }", 
 				"field_value": "{ field_value }"
 			}
 		],
-		"customer_list": [{ // 참조자 리스트
+		"customer_list": [{
 				"email": "{ id_type에 따라서 참조자 이메일 or 휴대폰번호 }",
 	      "name":"{ 참조자 이름 }"
 		}],
@@ -335,8 +335,7 @@
 	      "request_params": [{
 								"param_id": "{받아올 파라미터 이름(사용자 지정)}",
 								"param_value": "{fields에서 설정한 값이 없을 경우 받아올 기본 값}",
-								"fields": [{ // 서식에 field_name으로 등록한 필드 박스의 값이 없을경우 param_id:param_value return  
-													   // 값이 있을경우엔 param_id:field_value를 return
+								"fields": [{ 
                             "doc_id":"{ 서식 ID }",
                             "field_name":"{ 값을 가져올 서식 내 필드명 }" 
           			}]
@@ -345,6 +344,10 @@
 	}
 }
 ```
+
+**request\_params**   
+서식에 field\_name으로 등록한 필드 박스의 값이 없을경우 param\_id:param\_value return   
+값이 있을경우엔 param\_id:field\_value를 return
 
 ## Request Body Example - only Required
 
