@@ -62,7 +62,7 @@
       <td style="text-align:left">workflow_name</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Required</td>
-      <td style="text-align:left">&#xC2DC;&#xC791;&#xD560; &#xBB38;&#xC11C; &#xC774;&#xB984;</td>
+      <td style="text-align:left">&#xBB38;&#xC11C;&#xBA85; ( &#xACC4;&#xC57D;&#xC11C; &#xC774;&#xB984; )</td>
     </tr>
     <tr>
       <td style="text-align:left">doc_id</td>
@@ -447,11 +447,14 @@
    "workflow_id": "{ 문서아이디 }", 
    "workflow_name": "{ 시작된 서식 이름 }", 
    "token": "{ 문서를 시작한 사람이 계약의 첫번째 작성자일 경우 작성페이지에 접근할때 사용하는 토큰값 }", 
-   // https://docs.esignon.net/mail/sign?token=
-   // 위의 주소에 발급된 토큰 값을 입력하면 서명페이지에 접근
    "lang": "ko-KR" }
 }
 ```
+
+Response 로 수신한 토큰을 https://docs.esignon.net/mail/sign?token=:token 경로에 token 값을 입력  
+한뒤 접근하면 진행중인 계약서에 접근할 수 있습니다.   
+\( 생성자 기준으로 발급되는 token 입니다. 생성자가 만약 계약 단계에 있을경우 해당 URL로 서명이 가능  
+그 외의 경우에는 해당 URL로 진행중인 문서 확인이 가능합니다.  \) 
 
 ## Response export\_api Example
 

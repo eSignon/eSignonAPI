@@ -63,7 +63,11 @@
     <tr>
       <td style="text-align:left">workflow_name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&quot;&quot;</td>
+      <td style="text-align:left">
+        <p>unset_player_list.workflow_name &#xC774;&#xB984;&#xC744;</p>
+        <p>&#xC124;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC744;&#xACBD;&#xC6B0; &#xAE30;&#xBCF8;&#xC73C;&#xB85C;
+          &#xC9C0;&#xC815;&#xB418;&#xB294; &#xBB38;&#xC11C;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">workflow_lib_id</td>
@@ -107,7 +111,7 @@
     <tr>
       <td style="text-align:left">unset_player_list.workflow_name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xC2DC;&#xC791;&#xD558;&#xB294; &#xC11C;&#xC2DD; &#xC774;&#xB984;</td>
+      <td style="text-align:left">&#xBB38;&#xC11C;&#xBA85; ( &#xACC4;&#xC57D;&#xC11C; &#xC774;&#xB984; )</td>
     </tr>
     <tr>
       <td style="text-align:left">unset_player_list.enable_mobile_cert</td>

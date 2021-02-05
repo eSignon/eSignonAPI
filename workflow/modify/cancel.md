@@ -36,15 +36,68 @@
 
   Body - Body Parameter
 
-| **Parameter Name** | DataType | Required | **Description** |
-| :--- | :--- | :--- | :--- |
-| comp\_id | String | Required | 회사 ID |
-| biz\_id | String | Required | "0" |
-| memb\_email | String | Required | 사용자 이메일 |
-| workflow\_id | String | Required | 문서 ID |
-| command | String | Required | "CANCEL" - 취소 / "DISPOSAL" - 폐기 / "DELETE" - 삭제 |
-| description | String | Optional | "disposal" 시엔 필수 값 - "폐기 사유" |
-| timezone\_offset | String | Optional | "disposal" 시엔 필수 값 - "UTC 시간값 입력"/"+00:00" |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter Name</b>
+      </th>
+      <th style="text-align:left">DataType</th>
+      <th style="text-align:left">Required</th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">comp_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xD68C;&#xC0AC; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">biz_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&quot;0&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">memb_email</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xC0AC;&#xC6A9;&#xC790; &#xC774;&#xBA54;&#xC77C;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">workflow_id</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&#xBB38;&#xC11C; ID</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">command</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Required</td>
+      <td style="text-align:left">&quot;CANCEL&quot; - &#xCDE8;&#xC18C; / &quot;DISPOSAL&quot; - &#xD3D0;&#xAE30;
+        / &quot;DELETE&quot; - &#xC0AD;&#xC81C;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">description</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">&quot;disposal&quot; &#xC2DC;&#xC5D4; &#xD544;&#xC218; &#xAC12; - &quot;&#xD3D0;&#xAE30;
+        &#xC0AC;&#xC720;&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">timezone_offset</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">
+        <p>&quot;disposal&quot; &#xC2DC;&#xC5D4; &#xD544;&#xC218; &#xAC12; - &quot;UTC
+          &#xC2DC;&#xAC04;&#xAC12; &#xC785;&#xB825;&quot;/&quot;+00:00&quot;</p>
+        <p>&#xD55C;&#xAD6D;&#xC758; &#xACBD;&#xC6B0; &quot;+09:00&quot;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 요청 Body 예시\)
 
@@ -63,8 +116,8 @@
       "memb_email":"{사용자 이메일}",
       "workflow_id":"{문서 ID}",
       "command":"{ CANCEL or DISPOSAL or DELETE }",
-      "description":"{폐기 사유 입력}", // 
-      "timezone_offset":"+09:00" // UTC 00:00 기준 한국의 경우 +09:00으로
+      "description":"{폐기 사유 입력}",
+      "timezone_offset":"+09:00"
 	}
 }
 ```

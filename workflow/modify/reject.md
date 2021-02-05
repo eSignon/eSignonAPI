@@ -65,10 +65,10 @@
    "client_id":"{발급받은 클라이언트 ID}",
    "biz_id":"0",
    "memb_email":"{계약 진행자 이메일}",
-   "action_id":"1" // 계약 진행중인 단계,
+   "action_id":"1"
    "workflow_id":"{계약 중인 문서 ID}",
    "comment":"{승인 or 반려시 전달하는 문자}",
-   "command":"{RT or CF}" // RT – 반려, CF – 승인
+   "command":"{RT or CF}"
  }
 }
 
