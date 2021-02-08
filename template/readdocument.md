@@ -67,8 +67,12 @@
     <tr>
       <td style="text-align:left">search_dir_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">&#xC11C;&#xC2DD;&#xC744; &#xCC3E;&#xC744; &#xD3F4;&#xB354; ID / &quot;all&quot;(&#xACF5;&#xC720;&#xD3F4;&#xB354;),&quot;my&quot;(&#xB0B4;
-        &#xD3F4;&#xB354;)</td>
+      <td style="text-align:left">
+        <p>&#xC11C;&#xC2DD;&#xC744; &#xCC3E;&#xC744; &#xD3F4;&#xB354; ID
+          <br />&quot;all&quot;(&#xC804;&#xCCB4;&#xBCF4;&#xAE30;)
+          <br />&quot;my&quot;(&#xB0B4; &#xD3F4;&#xB354;)</p>
+        <p>&quot;shared&quot;(&#xACF5;&#xC720;&#xB41C; &#xD3F4;&#xB354;)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">display_order_mode</td>

@@ -112,10 +112,10 @@
 			{
 				"doc_uid": "{서식ID}",
 				"end_date": "{서명 완료 시간}",
-				"total_process_count": "1", // 서식 단계
+				"total_process_count": "{ 문서의 계약자 수 }",
 				"wf_manager_name": "{ 문서 생성자 이름 }",
 				"wf_manager_email": "{ 문서 생성자 이메일 }",
-				"wf_status": "Complete", // 문서 상태 Complete – 완료, Playing – 진행중
+				"wf_status": "{ 문서의 상태 값 }",
 				"field_value": "{조회한 필드 값}",
 				"wfuid": "{문서 ID}",
 				"current_process_no": "1",
