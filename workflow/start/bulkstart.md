@@ -167,7 +167,7 @@
       <td style="text-align:left">
         <p>&#xBBF8;&#xB9AC; &#xC124;&#xC815;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;&#xACBD;&#xC6B0;
           &#xC785;&#xB825;</p>
-        <p>&#xC5EC;&#xB7EC;&#xAC1C; &#xC124;&#xC815;&#xAC00;</p>
+        <p>&#xC5EC;&#xB7EC;&#xAC1C; &#xC124;&#xC815;&#xAC00;&#xB2A5;.</p>
       </td>
     </tr>
     <tr>
