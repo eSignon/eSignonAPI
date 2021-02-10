@@ -48,8 +48,8 @@
 | client\_id | String | Required | esignon 에서 발급받은 ID \( 발급은 문의 \) |
 | field\_list | Data | Required | 조회할 문서 정보 |
 | field\_list.doc\_uid | String | Required | 조회할 문서의 서식 ID |
-| field\_list.field\_name | String | Required | 조회할 문서 서식의 필드 이름 |
-| field\_list.field\_value | String | Required | 조회할 문서 서식의 필드  |
+| field\_list.field\_name | String | Optional | 조회할 문서 서식의 필드 이름 |
+| field\_list.field\_value | String | Optional | 조회할 문서 서식의 필드  |
 
 ## 요청 Body 예시\)
 
