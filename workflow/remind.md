@@ -52,7 +52,8 @@
 	"header": {
 		"request_code": "1429Q",
 		"request_msg": "Remind 를 요청합니다.",
-		"session_id": ""},
+		"session_id": ""
+	},
 	"body": {
 		"comp_id": "{회사 ID}",
 		"biz_id": "0",
