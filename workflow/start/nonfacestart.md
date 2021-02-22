@@ -89,6 +89,17 @@
       <td style="text-align:left">&#xC804;&#xB2EC;&#xBA54;&#xC2DC;&#xC9C0;</td>
     </tr>
     <tr>
+      <td style="text-align:left">preview</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">
+        <p>&quot;preview&quot; - &#xC785;&#xB825;&#xAC12; &#xACE0;&#xC815;</p>
+        <p>&#xC635;&#xC158; &#xC124;&#xC815;&#xC2DC; &#xBE44;&#xB300;&#xBA74; &#xACC4;&#xC57D;</p>
+        <p>&#xC2DC;&#xC791;&#xC774; &#xC544;&#xB2CC; &#xBBF8;&#xB9AC;&#xBCF4;&#xAE30;URL</p>
+        <p>&#xC774; &#xC81C;&#xACF5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">player_list</td>
       <td style="text-align:left">Array</td>
       <td style="text-align:left">Required</td>
@@ -480,4 +491,22 @@ Response 로 수신한 토큰을 https://docs.esignon.net/mail/sign?token=:token
 	}
 }
 ```
+
+## Response Body Example \( Preview \)
+
+```javascript
+{
+	"header": {
+		"response_code": "5005A",
+		"result_code": "00",
+		"result_msg": "success (preview url)",
+		"version": "9.9.99"
+	},
+	"body": {
+		"preview_url": "미리보기 URL"
+	}
+}
+```
+
+preview 옵션 설정시 Response로 비대면 계약 시작이 아닌 미리보기 URL이 제공됩니다. 
 
