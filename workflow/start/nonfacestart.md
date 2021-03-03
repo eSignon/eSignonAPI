@@ -98,6 +98,7 @@
       <td style="text-align:left">
         <p>YYYY-MM-DD&#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC785;&#xB825;</p>
         <p>&#xBB38;&#xC11C;&#xC758; &#xC791;&#xC131;&#xAE30;&#xD55C; &#xC124;&#xC815;</p>
+        <p>&#xB144; - &#xC6D4; -</p>
       </td>
     </tr>
     <tr>
@@ -324,6 +325,7 @@
 		"doc_id": "{서식 ID}",
 		"language": "ko-KR",
 		"comment": "",
+		"expireddate": "YYYY-MM-DD",
 		"player_list": [{
 			"field_owner": "1",
 			"email": "{ 받는 사람 email or 받는 사람 휴대폰 번호 }",
