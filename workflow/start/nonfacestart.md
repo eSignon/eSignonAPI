@@ -80,13 +80,25 @@
       <td style="text-align:left">language</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
-      <td style="text-align:left">&quot;ko-KR&quot;, &quot;en-US&quot;, &quot;ja-JP&quot;</td>
+      <td style="text-align:left">
+        <p>&quot;ko-KR&quot;, &quot;en-US&quot;, &quot;ja-JP&quot;</p>
+        <p>&#xC804;&#xB2EC;&#xD558;&#xB294; &#xBA54;&#xC77C;&#xC758; &#xD45C;&#xAE30;&#xC5B8;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">comment</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xC804;&#xB2EC;&#xBA54;&#xC2DC;&#xC9C0;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">expireddate</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Optional</td>
+      <td style="text-align:left">
+        <p>YYYY-MM-DD&#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC785;&#xB825;</p>
+        <p>&#xBB38;&#xC11C;&#xC758; &#xC791;&#xC131;&#xAE30;&#xD55C; &#xC124;&#xC815;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">preview</td>
