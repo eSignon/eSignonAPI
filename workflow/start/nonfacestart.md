@@ -82,7 +82,9 @@
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">
         <p>&quot;ko-KR&quot;, &quot;en-US&quot;, &quot;ja-JP&quot;</p>
-        <p>&#xC804;&#xB2EC;&#xD558;&#xB294; &#xBA54;&#xC77C;&#xC758; &#xD45C;&#xAE30;&#xC5B8;</p>
+        <p>&#xC804;&#xB2EC;&#xD558;&#xB294; &#xBA54;&#xC77C; &#xBC0F; &#xD50C;&#xB808;&#xC774;&#xD654;&#xC758;
+          &#xD45C;&#xAE30;&#xC5B8;&#xC5B4;</p>
+        <p>&#xCE74;&#xD1A1;&#xC758; &#xACBD;&#xC6B0; &#xD55C;&#xAE00;&#xB9CC; &#xC81C;&#xACF5;</p>
       </td>
     </tr>
     <tr>
