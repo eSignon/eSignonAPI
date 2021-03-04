@@ -100,7 +100,7 @@
       <td style="text-align:left">
         <p>YYYY-MM-DD&#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC785;&#xB825;</p>
         <p>&#xBB38;&#xC11C;&#xC758; &#xC791;&#xC131;&#xAE30;&#xD55C; &#xC124;&#xC815;</p>
-        <p>&#xB144; - &#xC6D4; -</p>
+        <p>&#xB144; - &#xC6D4; - &#xC77C;</p>
       </td>
     </tr>
     <tr>
@@ -165,7 +165,7 @@
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;
         &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12; RadioBox,CheckBox,LabelBox
-        ,TextBox &#xB9CC; &#xBBF8;&#xB9AC; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;</td>
+        ,TextBox,DatePickerBox &#xB9CC; &#xBBF8;&#xB9AC; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;</td>
     </tr>
     <tr>
       <td style="text-align:left">field_list.field_name</td>
@@ -177,10 +177,14 @@
       <td style="text-align:left">field_list.field_value</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
-      <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xAC12; Radio,Check Box &#xC758; &#xACBD;&#xC6B0;
-        &#xAC12;&#xC744; (&#x201C;N&#x201D; or &#x201D;Y&#x201D;) &#xB85C; &#xC218;&#xC2E0;
-        Label,Text Box &#xC758; &#xACBD;&#xC6B0; &#xD14D;&#xC2A4;&#xD2B8; &#xAC12;&#xC744;
-        &#xADF8;&#xB300;&#xB85C; &#xC218;&#xC2E0;</td>
+      <td style="text-align:left">
+        <p>&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xAC12; Radio,Check Box &#xC758; &#xACBD;&#xC6B0;
+          &#xAC12;&#xC744; (&#x201C;N&#x201D; or &#x201D;Y&#x201D;) &#xB85C; &#xC218;&#xC2E0;
+          Label,Text Box &#xC758; &#xACBD;&#xC6B0; &#xD14D;&#xC2A4;&#xD2B8; &#xAC12;&#xC744;
+          &#xADF8;&#xB300;&#xB85C; &#xC218;&#xC2E0;</p>
+        <p>DatePickerBox ( &#xB0A0;&#xC9DC;&#xBC15;&#xC2A4; )</p>
+        <p>&#xC758; &#xACBD;&#xC6B0; YYYY-MM-DD &#xD615;&#xD0DC;&#xB85C;&#xC785;</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info</td>
