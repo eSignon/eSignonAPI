@@ -57,13 +57,6 @@
       <td style="text-align:left">&#xD68C;&#xC0AC; ID</td>
     </tr>
     <tr>
-      <td style="text-align:left">client_id</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">esignon &#xC5D0;&#xC11C; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; ID ( &#xBC1C;&#xAE09;&#xC740;
-        &#xBB38;&#xC758; )</td>
-    </tr>
-    <tr>
       <td style="text-align:left">search_date_type</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
@@ -121,7 +114,6 @@
  },
    "body" : {
      "comp_id": "{회사 ID}",
-     "client_id": "{발급받은 클라이언트 ID}",
      "search_date_type":"{START or END}",
      "start_date": "{검색 시작 지점}",
      "end_date": "{검색 종료 지점}",

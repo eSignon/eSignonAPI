@@ -42,7 +42,6 @@
 | **Parameter Name** | DataType | Required | **Description** |
 | :--- | :--- | :--- | :--- |
 | comp\_id | String | Required | 회사 ID |
-| client\_id | String | Required | esignon 에서 발급받은 ID \( 발급은 문의 \) |
 | field\_list | Data | Required | 조회할 문서 정보 |
 | field\_list.doc\_uid | String | Required | 조회할 문서의 서식 ID |
 | field\_list.field\_name | String | Required | 조회할 문서 서식의 필드 이름 |
@@ -60,7 +59,6 @@
 	 },
 	 "body" : {
 	   "comp_id": "{ 회사 ID }",
-	   "client_id":"{ 발급받은 클라이언트 ID }",
 	   "field_list": [ 
 			    {
 						"doc_uid": "{조회할 서식 ID}",

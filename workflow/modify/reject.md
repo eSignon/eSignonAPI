@@ -43,7 +43,6 @@
 | :--- | :--- | :--- | :--- |
 | comp\_id | String | Required | 회사 ID |
 | biz\_id | String | Required | "0" |
-| client\_id | String | Required | esignon 에서 발급받은 ID \( 발급은 문의 \) |
 | memb\_email | String | Required | 계약 진행자 이메일 |
 | action\_id | String | Required | 계약 진행중인 단계 |
 | workflow\_id | String | Required | 계약중인 문서 ID |
@@ -62,7 +61,6 @@
  },
  "body" : {
    "comp_id": "{회사 ID}",
-   "client_id":"{발급받은 클라이언트 ID}",
    "biz_id":"0",
    "memb_email":"{계약 진행자 이메일}",
    "action_id":"1"

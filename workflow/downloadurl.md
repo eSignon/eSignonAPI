@@ -32,10 +32,6 @@ application/json
 {% api-method-parameter name="workflow\_id" type="string" required=true %}
 완료 된 문서의 ID 값 / wfuid
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="client\_id" type="string" required=true %}
-esignon 에서 발급받은 ID 
-{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -69,7 +65,6 @@ Example\) Request Body
 
 ```javascript
 {
-  "client_id":"{발급받은 클라이언트 ID}",
 	"workflow_id": "{완료 된 문서의 ID 값}"
 }
 ```
