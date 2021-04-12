@@ -70,5 +70,5 @@ companyId 의 경우 회사명이 아닌 회사 고유의 ID를 지칭합니다.
 
 ![](.gitbook/assets/label_black_48x48.png) **회사  API**
 
-* 회사 정보조회 
+* [회사 정보조회](https://api.esignon.net/company/compinfo)
 
