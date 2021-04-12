@@ -1,10 +1,8 @@
 # 다운로드 URL 생성
 
-## 해당 API는 구버전입니다. 신규 API 인 문서 정보 조회 API 에 병합 됨
+## 해당 API는 구버전입니다. 신규 API 인[ 문서 정보 조회 API](https://api.esignon.net/workflow/view/workflowinfo) 에 병합 됨
 
-**문서 정보 조회 API 에서 해당 정보 가져올수있습니다. \( 유지시간 무제한 \)**
-
-{% page-ref page="downloadurl.md" %}
+\*\*\*\*[**문서 정보 조회 API**](https://api.esignon.net/workflow/view/workflowinfo) **에서 해당 정보 가져올수있습니다. \( 유지시간 무제한 \)**
 
 회사 ID 와 문서의 ID 를 통하여 문서를 다운로드 할 수 있는 URL 을 가져옵니다.
 
