@@ -1,6 +1,6 @@
 # 다운로드 URL 생성
 
-## 해당 API는 구버전입니다. 신규 API 인[ 문서 정보 조회 API](https://api.esignon.net/workflow/view/workflowinfo) 에 병합 됨
+### 해당 API는 구버전입니다. 신규 API 인[ 문서 정보 조회 API](https://api.esignon.net/workflow/view/workflowinfo) 를 사용하세요.
 
 \*\*\*\*[**문서 정보 조회 API**](https://api.esignon.net/workflow/view/workflowinfo) **에서 해당 정보 가져올수있습니다. \( 유지시간 무제한 \)**
 
