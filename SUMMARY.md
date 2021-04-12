@@ -27,7 +27,7 @@
 * [정보 조회](template/docinfo.md)
 * [목록 조회](template/readdocument.md)
 
-## 회사 <a id="undefined-1"></a>
+## 회사 <a id="company"></a>
 
-* [정보 조회](undefined-1/compinfo.md)
+* [정보 조회](company/compinfo.md)
 

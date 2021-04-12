@@ -54,7 +54,7 @@ companyId 의 경우 회사명이 아닌 회사 고유의 ID를 지칭합니다.
 * [기간으로 조회](https://api.esignon.net/workflow/view/readbydate)
 * [진행 문서 목록조회](https://api.esignon.net/workflow/view/readallworkflow)
 * [모든필드 값 조회](https://api.esignon.net/v/kor_20210407/workflow/view/searchall) \(구\)
-* 문서 정보조회
+* [문서 정보조회](https://api.esignon.net/workflow/view/workflowinfo)
 
 ![](.gitbook/assets/restore_page_black_48x48.png) **문서 - 상태변경 API List 및 기타 API List**
 
@@ -66,7 +66,7 @@ companyId 의 경우 회사명이 아닌 회사 고유의 ID를 지칭합니다.
 ![](.gitbook/assets/description_black_48x48.png) **서식  API**
 
 * [목록조회](https://api.esignon.net/template/readdocument)
-* 서식 정보조회 
+* [서식 정보조회 ](https://api.esignon.net/template/docinfo)
 
 ![](.gitbook/assets/label_black_48x48.png) **회사  API**
 
