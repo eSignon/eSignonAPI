@@ -13,7 +13,7 @@
   * [비대면 계약 - ExportAPI 설명](workflow/start/exportapi.md)
   * [대량전송 계약 시작](workflow/start/bulkstart.md)
 * [조회](workflow/view/README.md)
-  * [정보 조회](workflow/view/undefined.md)
+  * [정보 조회](workflow/view/workflowinfo.md)
   * [특정필드 값으로 조회](workflow/view/readbyfiled.md)
   * [기간으로 조회](workflow/view/readbydate.md)
   * [진행 문서 목록조회](workflow/view/readallworkflow.md)
@@ -24,10 +24,10 @@
 
 ## 서식 <a id="template"></a>
 
-* [정보 조회](template/undefined.md)
+* [정보 조회](template/docinfo.md)
 * [목록 조회](template/readdocument.md)
 
 ## 회사 <a id="undefined-1"></a>
 
-* [정보 조회](undefined-1/undefined.md)
+* [정보 조회](undefined-1/compinfo.md)
 
