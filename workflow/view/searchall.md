@@ -1,5 +1,7 @@
 # 모든필드 값 조회
 
+## 해당 API는 구버전입니다. 신규 API 인[ 문서 정보 조회 API](https://api.esignon.net/workflow/view/workflowinfo) 에 병합 됨
+
 * 문서 ID를 받아 해당 문서 내 모든 필드값을 조회합니다.
 
 {% api-method method="post" host="https://docs.esignon.net" path="/exportfield" %}
