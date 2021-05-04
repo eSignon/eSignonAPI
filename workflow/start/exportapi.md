@@ -69,12 +69,6 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">export_api_info.clientid</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">esignon &#xC5D0;&#xC11C; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; ID ( &#xBC1C;&#xAE09;&#xC740;
-        &#xBB38;&#xC758; )</td>
-    </tr>
-    <tr>
       <td style="text-align:left">export_api_info.request_params</td>
       <td style="text-align:left">Data</td>
       <td style="text-align:left">&#xBC1B;&#xC544;&#xC62C; &#xD544;&#xB4DC;&#xC758; &#xC815;&#xBCF4;&#xB97C;

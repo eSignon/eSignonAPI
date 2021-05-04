@@ -225,13 +225,6 @@
         &#xAC12; or &quot;embed&quot;( ExportAPI &#xC124;&#xBA85; &#xCC38;&#xC870;)</td>
     </tr>
     <tr>
-      <td style="text-align:left">export_api_info.clientid</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Optional</td>
-      <td style="text-align:left">esignon &#xC5D0;&#xC11C; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; ID ( &#xBC1C;&#xAE09;&#xC740;
-        &#xBB38;&#xC758; )</td>
-    </tr>
-    <tr>
       <td style="text-align:left">export_api_info.authorization</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
@@ -361,7 +354,6 @@
 				"url": "{ 통신 받을 url }",
 				"link_type": "{download or null}",
 				"request_code": "{ 고객이 정의하는 임의 값 }",
-				"clientid": "{ 발급받은 UniqueID }",
 				"authorization": "{설정 URL로 request 시에 Header - authorization 으로 받아올 값 }",
 	      "request_params": [{
 								"param_id": "{받아올 파라미터 이름(사용자 지정)}",
