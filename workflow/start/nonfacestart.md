@@ -446,12 +446,112 @@
 
 #### Result\_msg
 
-| Code | **Description** | **Reference** |
-| :--- | :--- | :--- |
-| 00 | 성공 | 성공 |
-| 10 | 실패 | 실패 |
-| 99 | 실패 | Unexpected exception \( 잘못된 포맷 \) |
-| 12 | 실패 | 수신 메세지의 Body 정보가 잘못된 형태여서 파싱하지 못했습니다. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Code</th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+      <th style="text-align:left"><b>Reference</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">00</td>
+      <td style="text-align:left">&#xC131;&#xACF5;</td>
+      <td style="text-align:left">&#xC131;&#xACF5;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-1</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
+      <td style="text-align:left">
+        <p>&#xBB38;&#xC11C;&#xBA85;&#xC740; 1~128&#xC790;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;.
+          <br
+          />timezone_offset&#xC758; &#xD615;&#xC2DD;&#xC774; &#xC798;&#xBABB;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.
+          // ( +XX:XX or -XX:XX ) &#xD615;&#xC2DD;
+          <br />&#xBB38;&#xC11C;&#xC774;&#xB984;&#xC5D0; &#xD2B9;&#xC218;&#xBB38;&#xC790;&#xB97C;
+          &#xD3EC;&#xD568;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.(\&apos;,
+          \&quot;, \\, /, :, |, &lt;, &gt;, <em>. ?) <br />&#xC774;&#xB984;&#xC5D0; &#xD2B9;&#xC218;&#xBB38;&#xC790;&#xB97C; &#xD3EC;&#xD568;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.(\&apos;, \&quot;, \\, /, :, |, &lt;, &gt;, </em>.
+          ?)
+          <br />&#xD734;&#xB300;&#xD3F0; &#xD615;&#xC2DD;&#xC774; &#xB9DE;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.
+          ( - &#xC720;&#xBB34; &#xC0C1;&#xAD00;&#xC5C6;&#xC74C; )
+          <br />&#xC774;&#xBA54;&#xC77C; &#xD615;&#xC2DD;&#xC774; &#xB9DE;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.
+          <br
+          />&#xD734;&#xB300;&#xD3F0; &#xBCF8;&#xC778;&#xC778;&#xC99D; &#xC694;&#xCCAD;
+          &#xC0DD;&#xB144;&#xC6D4;&#xC77C;&#xC758; &#xB0A0;&#xC9DC;&#xAC00; &#xC801;&#xD569;&#xD558;&#xC9C0;
+          &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. 8&#xC790;&#xB9AC;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;.(ex.20200120)(&#xC694;&#xCCAD;
+          &#xC0DD;&#xB144;&#xC6D4;&#xC77C; :**** )</p>
+        <p>&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xC5D0; &#xD55C;&#xAE00;&#xC740; &#xC785;&#xB825;&#xD560;
+          &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xC5D0; &#xD2B9;&#xC218;&#xBB38;&#xC790;[\&apos;
+          \&quot; \]&#xB97C; &#xC785;&#xB825;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xC778;&#xC99D; &#xBE44;&#xBC00;&#xBC88;&#xD638;(password)&#xB294;
+          4~15&#xC790;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+        <p>&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xC778;&#xC99D; &#xD78C;&#xD2B8;&#xB294;
+          50&#xC790; &#xC774;&#xD558;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+        <p>&#xBA54;&#xC138;&#xC9C0; &#xAE00;&#xC790;&#xC218;&#xB97C; &#xCD08;&#xACFC;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.(250&#xC790;
+          &#xC81C;&#xD55C;)</p>
+        <p>player_list&#xC758; name &#xAC12;&#xC740; &#xD544;&#xC218;&#xB85C; &#xC785;&#xB825;&#xD558;&#xC154;&#xC57C;
+          &#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC2DC;&#xC791;&#xD558;&#xB294; &#xC0AC;&#xB78C;(memb_email:***)&#xC740;
+          &#xD68C;&#xC0AC;&#xC5D0; &#xAC00;&#xC785;&#xB41C; &#xC0AC;&#xB78C;&#xC774;&#xC5EC;&#xC57C;
+          &#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xC11C;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.</p>
+        <p>(&#xC11C;&#xC2DD;&#xC544;&#xC774;&#xB514;:**) &#xC11C;&#xC2DD;&#xC5D0;
+          &#xC791;&#xC131;&#xC790;&#xAC00; &#xC124;&#xC815;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xC11C;&#xC2DD;&#xBA54;&#xB274;&#xC5D0;&#xC11C; &#xD574;&#xB2F9; &#xC11C;&#xC2DD;&#xC758;
+          &#xBB38;&#xC11C; &#xC791;&#xC131;&#xC790;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC8FC;&#xC138;&#xC694;.(&#xC11C;&#xC2DD;&#xC544;&#xC774;&#xB514;:**)</p>
+        <p>&#xC124;&#xC815;&#xD55C; &#xBB38;&#xC11C;&#xC791;&#xC131;&#xC790; &#xC218;(
+          * <em>)&#xC640; &#xC11C;&#xC2DD;&#xC758; &#xBB38;&#xC11C;&#xC791;&#xC131;&#xC790; &#xC218;( * </em>)&#xAC00;
+          &#xC77C;&#xCE58;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">10</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">11</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
+      <td style="text-align:left">&#xC218;&#xC2E0; &#xBA54;&#xC138;&#xC9C0;&#xC758; Body &#xC815;&#xBCF4;&#xAC00;
+        &#xC798;&#xBABB;&#xB41C; &#xD615;&#xD0DC;&#xC5EC;&#xC11C; &#xD30C;&#xC2F1;&#xD558;&#xC9C0;
+        &#xBABB;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">12</td>
+      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">eSignon &#xC11C;&#xBE44;&#xC2A4; &#xC774;&#xC6A9;&#xAE30;&#xAC04;&#xC774;
+        &#xB9CC;&#xB8CC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xACE0;&#xAC1D;&#xC9C0;&#xC6D0;&#xC13C;&#xD130;&#xB85C;
+        &#xC5F0;&#xB77D;&#xBD80;&#xD0C1;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.(02-6299-5926)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">13</td>
+      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">eSignon &#xC11C;&#xBE44;&#xC2A4; &#xC0AC;&#xC6A9;&#xAC74;&#xC218;&#xAC00;
+        &#xCD08;&#xACFC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xACE0;&#xAC1D;&#xC9C0;&#xC6D0;&#xC13C;&#xD130;&#xB85C;
+        &#xC5F0;&#xB77D;&#xBD80;&#xD0C1;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.(02-6299-5926)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">19</td>
+      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">&#xB0A0;&#xC9DC;&#xD615;&#xC2DD;&#xC774; &#xC798;&#xBABB;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.
+        ( &#xB9CC;&#xB8CC;&#xC77C; &#xC124;&#xC815; )</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">20</td>
+      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">&#xC9C0;&#xB09C; &#xB0A0;&#xC9DC;&#xB97C; &#xB9CC;&#xB8CC;&#xC77C;&#xB85C;
+        &#xC124;&#xC815;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">99</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
+      <td style="text-align:left">Unexpected exception ( &#xC798;&#xBABB;&#xB41C; &#xD3EC;&#xB9F7; )</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Response Body Example
 
