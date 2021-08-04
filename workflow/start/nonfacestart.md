@@ -53,12 +53,6 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">biz_id</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">&quot;0&quot;</td>
-    </tr>
-    <tr>
       <td style="text-align:left">workflow_name</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Required</td>
@@ -121,12 +115,6 @@
       <td style="text-align:left">&#xC11C;&#xBA85;&#xD558;&#xB294; &#xACE0;&#xAC1D;&#xC758; &#xC815;&#xBCF4;&#xB97C;
         &#xC785;&#xB825; &#xC11C;&#xC2DD;&#xC758; &#xB2E8;&#xACC4;&#xC5D0; &#xB9DE;&#xCDB0;&#xC11C;
         &#xC791;&#xC131; &#xD544;&#xC218;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">player_list.field_owner</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
-      <td style="text-align:left">&#xC791;&#xC131; &#xC21C;&#xC11C; &quot; 1 &quot; &#xBD80;&#xD130; &#xC2DC;&#xC791;</td>
     </tr>
     <tr>
       <td style="text-align:left">player_list.email</td>
@@ -220,7 +208,7 @@
     <tr>
       <td style="text-align:left">export_api_info.request_code</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xACE0;&#xAC1D;&#xC774; &#xC815;&#xC758;&#xD558;&#xB294; &#xC784;&#xC758;&#xC758;
         &#xAC12; or &quot;embed&quot;( ExportAPI &#xC124;&#xBA85; &#xCC38;&#xC870;)</td>
     </tr>
