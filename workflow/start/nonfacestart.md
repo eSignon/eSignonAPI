@@ -3,7 +3,7 @@
 * 비대면 계약 서식을 시작합니다.
 * export\_api 값을 따로 설정하여 받아올 값의 형식을 지정할 수 있습니다.\(선택사항\)
 * export\_api 란 고객님이 진행중 승인, 반려를 할 경우 설정된 값을 설정된 URL로 esignon에서 request 해주는 기능입니다.
-* ※ Array 타입의 파라미터가 optional 인 경우 사용 시 Array 내부 파라미터 값 중 필수 값은 반드시 입력하셔야합니다. 사용을 하지 않으실 경우엔 입력하지 않으셔도 상관없습니다.
+* ※ Body 파라미터 중 **Required 값은 필수 값이므로 입력하지 않으시면 요청에 실패합니다.** 또한, Optional 이지만 Array 타입의 파라미터를 사용하실 경우 Array 내부 파라미터 값 중 Required 값을 꼭 입력해주셔야 합니다. 사용을 하지 않으실 경우엔 내부 파라미터를 입력하실 필요가 없습니다.
 * ※ language 파리미터의 경우 기본값 "ko-KR" \( 설정 안했을경우 \)
 
 ## API 주소 정보 
@@ -26,8 +26,8 @@
 
 | **Parameter Name**                         | DataType                                       **** | Required | **Description** |
 | :--- | :--- | :--- | :--- |
-| Content-Type | String | Required | "application/json" |
-| Authorization | String | Required | "esignon ${발급받은토큰}"    |
+| Content-Type | String | **Required** | "application/json" |
+| Authorization | String | **Required** | "esignon ${발급받은토큰}"    |
 
 ####   Body 
 
@@ -55,19 +55,22 @@
     <tr>
       <td style="text-align:left">workflow_name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xBB38;&#xC11C;&#xBA85; ( &#xACC4;&#xC57D;&#xC11C; &#xC774;&#xB984; )</td>
     </tr>
     <tr>
       <td style="text-align:left">doc_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xC2DC;&#xC791;&#xD560; &#xC11C;&#xC2DD; ID</td>
     </tr>
     <tr>
       <td style="text-align:left">memb_email</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xACC4;&#xC57D; &#xC2DC;&#xC791;&#xC790; &#xC774;&#xBA54;&#xC77C;</td>
     </tr>
     <tr>
@@ -109,9 +112,16 @@
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">player_list</td>
       <td style="text-align:left">Array</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xC11C;&#xBA85;&#xD558;&#xB294; &#xACE0;&#xAC1D;&#xC758; &#xC815;&#xBCF4;&#xB97C;
         &#xC785;&#xB825; &#xC11C;&#xC2DD;&#xC758; &#xB2E8;&#xACC4;&#xC5D0; &#xB9DE;&#xCDB0;&#xC11C;
         &#xC791;&#xC131; &#xD544;&#xC218;</td>
@@ -119,13 +129,15 @@
     <tr>
       <td style="text-align:left">player_list.email</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xC774;&#xBA54;&#xC77C; or &#xC804;&#xD654;&#xBC88;&#xD638;</td>
     </tr>
     <tr>
       <td style="text-align:left">player_list.name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><b>Required</b>
+      </td>
       <td style="text-align:left">&#xACC4;&#xC57D; &#xC9C4;&#xD589;&#xC790; &#xC774;&#xB984;</td>
     </tr>
     <tr>
@@ -146,6 +158,12 @@
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xACC4;&#xC57D; &#xC9C4;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD560; &#xBE44;&#xBC00;&#xBC88;&#xD638;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">field_list</td>
@@ -173,6 +191,12 @@
         <p>DatePickerBox ( &#xB0A0;&#xC9DC;&#xBC15;&#xC2A4; )</p>
         <p>&#xC758; &#xACBD;&#xC6B0; YYYY-MM-DD &#xD615;&#xD0DC;&#xB85C;&#xC785;</p>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info</td>
@@ -243,9 +267,9 @@
       <td style="text-align:left">export_api_info.request_params.param_value</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Required</td>
-      <td style="text-align:left">Params.fields&#xC5D0;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xAC12;&#xC774;
+      <td style="text-align:left">request_params.fields&#xC5D0;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xAC12;&#xC774;
         &#xBB38;&#xC11C;&#xC5D0; &#xC5C6;&#xB294;&#xACBD;&#xC6B0; &#xBC1B;&#xC544;&#xC62C;
-        &#xAE30;&#xBCF8;</td>
+        &#xAE30;&#xBCF8; &#xAC12;</td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info.request_params.fields</td>
@@ -254,7 +278,7 @@
       <td style="text-align:left">&#xC11C;&#xC2DD; &#xB0B4;&#xBD80;&#xC5D0; &#xC788;&#xB294; &#xD544;&#xB4DC;&#xBA85;&#xC744;
         &#xC870;&#xD68C;&#xD558;&#xC5EC; &#xD544;&#xB4DC;&#xC774;&#xB984;&#xC5D0;
         &#xD574;&#xB2F9;&#xD558;&#xB294; &#xAC12;&#xC774; &#xBB38;&#xC11C;&#xC5D0;
-        &#xC874;&#xC7AC;&#xD560; &#xACBD;&#xC6B0; param_value &#xB300;&#xC2E0;&#xC5D0;
+        &#xC874;&#xC7AC;&#xD560; &#xACBD;&#xC6B0; request_params.param_value &#xB300;&#xC2E0;&#xC5D0;
         &#xB4E4;&#xC5B4;&#xAC00;&#xB294; &#xAC12;</td>
     </tr>
     <tr>
@@ -269,6 +293,12 @@
       <td style="text-align:left">Required</td>
       <td style="text-align:left">&#xAC12;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC11C;&#xC2DD; &#xB0B4; &#xD544;&#xB4DC;
         &#xBA85;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">customer_list</td>
@@ -292,7 +322,7 @@
       <td style="text-align:left">customer_list.language</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
-      <td style="text-align:left">ko-KR, en-US, ja-JP</td>
+      <td style="text-align:left">&quot;ko-KR&quot;, &quot;en-US&quot;, &quot;ja-JP&quot;</td>
     </tr>
   </tbody>
 </table>
