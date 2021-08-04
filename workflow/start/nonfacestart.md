@@ -3,7 +3,7 @@
 * 비대면 계약 서식을 시작합니다.
 * export\_api 값을 따로 설정하여 받아올 값의 형식을 지정할 수 있습니다.\(선택사항\)
 * export\_api 란 고객님이 진행중 승인, 반려를 할 경우 설정된 값을 설정된 URL로 esignon에서 request 해주는 기능입니다.
-* ※ Body 파라미터 중 **Required 값은 필수 값이므로 입력하지 않으시면 요청에 실패합니다.** 또한, Optional 이지만 Array 타입의 파라미터를 사용하실 경우 Array 내부 파라미터 값 중 Required 값을 꼭 입력해주셔야 합니다. 사용을 하지 않으실 경우엔 내부 파라미터를 입력하실 필요가 없습니다.
+* ※ Body 파라미터 중 **Required 값은 필수 값이므로 입력하지 않으시면 요청에 실패합니다.** 또한, Optional 이지만 Array 타입의 파라미터를 사용하실 경우 Array 내부 파라미터 값 중 Required 값을 꼭 입력해주셔야 합니다. 사용을 하지 않으실 경우에 내부 파라미터를 입력하실 필요가 없습니다.
 * ※ language 파리미터의 경우 기본값 "ko-KR" \( 설정 안했을경우 \)
 
 ## API 주소 정보 
@@ -20,7 +20,7 @@
 
 | **Parameter Name** | DataType | **Description** |
 | :--- | :--- | :--- |
-| CompID | String | 회사아이디 |
+| :companyId | String | 회사아이디 |
 
 ####  Headers
 
@@ -35,8 +35,8 @@
 
 | **Parameter Name**                         | DataType                                              **** | Required | **Description** |
 | :--- | :--- | :--- | :--- |
-| request\_code | String | Required | "5005Q"\(API 고유 코드\) |
-| version | String | Required | "9.9.99" |
+| request\_code | String | **Required** | "5005Q"\(API 고유 코드\) |
+| version | String | **Required** | "9.9.99" |
 
   Body - Body Parameter
 
@@ -200,7 +200,7 @@
     </tr>
     <tr>
       <td style="text-align:left">export_api_info</td>
-      <td style="text-align:left">Object</td>
+      <td style="text-align:left">Array</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xC791;&#xC131; &#xB370;&#xC774;&#xD130;&#xB97C; &#xB0B4;&#xBCF4;&#xB0BC;&#xC2DC;&#xC5D0;
         &#xC124;&#xC815;&#xD558;&#xB294; &#xAC12;</td>
@@ -208,14 +208,16 @@
     <tr>
       <td style="text-align:left">export_api_info.api_type</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&quot;StartAndEnd&quot;(&#xC2DC;&#xC791;&#xACFC; &#xB05D;&#xB9CC;) or
         &quot;ALL&quot; (&#xC804;&#xBD80;)</td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info.url</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xD1B5;&#xC2E0; &#xBC1B;&#xC744; url</td>
     </tr>
     <tr>
@@ -259,14 +261,16 @@
     <tr>
       <td style="text-align:left">export_api_info.request_params.param_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xBC1B;&#xC544;&#xC62C; &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC774;&#xB984;(&#xC0AC;&#xC6A9;&#xC790;
         &#xC9C0;&#xC815;)</td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info.request_params.param_value</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">request_params.fields&#xC5D0;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xAC12;&#xC774;
         &#xBB38;&#xC11C;&#xC5D0; &#xC5C6;&#xB294;&#xACBD;&#xC6B0; &#xBC1B;&#xC544;&#xC62C;
         &#xAE30;&#xBCF8; &#xAC12;</td>
@@ -274,7 +278,8 @@
     <tr>
       <td style="text-align:left">export_api_info.request_params.fields</td>
       <td style="text-align:left">Array</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xC11C;&#xC2DD; &#xB0B4;&#xBD80;&#xC5D0; &#xC788;&#xB294; &#xD544;&#xB4DC;&#xBA85;&#xC744;
         &#xC870;&#xD68C;&#xD558;&#xC5EC; &#xD544;&#xB4DC;&#xC774;&#xB984;&#xC5D0;
         &#xD574;&#xB2F9;&#xD558;&#xB294; &#xAC12;&#xC774; &#xBB38;&#xC11C;&#xC5D0;
@@ -284,13 +289,15 @@
     <tr>
       <td style="text-align:left">export_api_info.request_params.fields.doc_id</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xC11C;&#xC2DD; ID</td>
     </tr>
     <tr>
       <td style="text-align:left">export_api_info.request_params.fields.field_name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xAC12;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC11C;&#xC2DD; &#xB0B4; &#xD544;&#xB4DC;
         &#xBA85;</td>
     </tr>
@@ -309,13 +316,15 @@
     <tr>
       <td style="text-align:left">customer_list.email</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xC774;&#xBA54;&#xC77C; or &#xD734;&#xB300;&#xD3F0;&#xBC88;&#xD638;</td>
     </tr>
     <tr>
       <td style="text-align:left">customer_list.name</td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Required</td>
+      <td style="text-align:left"><em><b>Required</b></em>
+      </td>
       <td style="text-align:left">&#xCC38;&#xC870;&#xC790; &#xC774;&#xB984;</td>
     </tr>
     <tr>
