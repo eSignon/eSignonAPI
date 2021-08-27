@@ -123,7 +123,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"processid": "1", //이싸인온에서 사용하는 process 구분값
 		"requestid": "{ header 의 request_code 값 }",
 		"actionid": "1", //이싸인온에서 사용하는 action 구분값
-		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간
+		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간 UTC±00:00
 		"worktype": "CF", //CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
@@ -150,7 +150,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"processid": "1", //이싸인온에서 사용하는 process 구분값
 		"requestid": "{ embed로 고정 }",
 		"actionid": "1", //이싸인온에서 사용하는 action 구분값
-		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간
+		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간 UTC±00:00
 		"worktype": "CF", //CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
@@ -180,7 +180,7 @@ embed Code를 사용 할 경우 최초 비대면 계약 호출시 response로 �
 		"processid": "1", //이싸인온에서 사용하는 process 구분값
 		"requestid": "{ embed로 고정 }",
 		"actionid": "1", //이싸인온에서 사용하는 action 구분값
-		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간
+		"workdatetime": "2020-01-31 04:23:28.0", //작성완료시간 UTC±00:00
 		"worktype": "CF", //CF=승인, RT=반려 작성자가 2단계 이상의 문서에서는 승인, 반려를 선택할 수 있음.
 		"wfuid": "{}", //이싸인온에서 사용하는 문서구분id
 		"useremail": "{ 서명자 이메일or휴대폰번호 }", 
