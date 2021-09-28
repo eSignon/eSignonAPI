@@ -548,7 +548,7 @@
     </tr>
     <tr>
       <td style="text-align:left">12</td>
-      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
       <td style="text-align:left">eSignon &#xC11C;&#xBE44;&#xC2A4; &#xC774;&#xC6A9;&#xAE30;&#xAC04;&#xC774;
         &#xB9CC;&#xB8CC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xACE0;&#xAC1D;&#xC9C0;&#xC6D0;&#xC13C;&#xD130;&#xB85C;
         &#xC5F0;&#xB77D;&#xBD80;&#xD0C1;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.(02-6299-5926)</td>
@@ -568,7 +568,7 @@
     </tr>
     <tr>
       <td style="text-align:left">20</td>
-      <td style="text-align:left">&#xC2E4;</td>
+      <td style="text-align:left">&#xC2E4;&#xD328;</td>
       <td style="text-align:left">&#xC9C0;&#xB09C; &#xB0A0;&#xC9DC;&#xB97C; &#xB9CC;&#xB8CC;&#xC77C;&#xB85C;
         &#xC124;&#xC815;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
