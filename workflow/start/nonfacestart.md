@@ -170,26 +170,39 @@
       <td style="text-align:left">Array</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;
-        &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12; RadioBox,CheckBox,LabelBox
-        ,TextBox,DatePickerBox &#xB9CC; &#xBBF8;&#xB9AC; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;</td>
+        &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;
+        &#xBC15;&#xC2A4;:
+        <br />RadioBox,
+        <br />CheckBox,
+        <br />LabelBox,
+        <br />TextBox,
+        <br />DatePickerBox(&#xB0A0;&#xC9DC;&#xBC15;&#xC2A4;),
+        <br />PictureBox</td>
     </tr>
     <tr>
       <td style="text-align:left">field_list.field_name</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
-      <td style="text-align:left">&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xC774;&#xB984;</td>
+      <td style="text-align:left">&#xAC01; &#xD544;&#xB4DC;&#xBA85; (&#xC11C;&#xC2DD; &#xC218;&#xC815;&#xC758;
+        &#xC624;&#xB978;&#xCABD; &#xC5D0;&#xC11C; &#xC815;&#xC758;&#xD55C; &#xBC15;&#xC2A4;
+        &#xC774;&#xB984;)</td>
     </tr>
     <tr>
       <td style="text-align:left">field_list.field_value</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">
-        <p>&#xC11C;&#xC2DD; &#xD544;&#xB4DC; &#xAC12; Radio,Check Box &#xC758; &#xACBD;&#xC6B0;
-          &#xAC12;&#xC744; (&#x201C;N&#x201D; or &#x201D;Y&#x201D;) &#xB85C; &#xC218;&#xC2E0;
-          Label,Text Box &#xC758; &#xACBD;&#xC6B0; &#xD14D;&#xC2A4;&#xD2B8; &#xAC12;&#xC744;
-          &#xADF8;&#xB300;&#xB85C; &#xC218;&#xC2E0;</p>
-        <p>DatePickerBox ( &#xB0A0;&#xC9DC;&#xBC15;&#xC2A4; )</p>
-        <p>&#xC758; &#xACBD;&#xC6B0; YYYY-MM-DD &#xD615;&#xD0DC;&#xB85C;&#xC785;</p>
+        <p>Radio, Check Box : &quot;N&quot; or &quot;Y&quot;</p>
+        <p>Label, Text Box : &#xD14D;&#xC2A4;&#xD2B8; &#xAC12;</p>
+        <p>DatePickerBox : YYYY-MM-DD &#xD615;&#xC2DD;&#xC758; &#xB0A0;&#xC9DC; &#xC785;&#xB825;</p>
+        <p>PictureBox : &#xC774;&#xBBF8;&#xC9C0;&#xB97C; base64&#xB85C; &#xC778;&#xCF54;&#xB529;&#xD55C;
+          &#xD14D;&#xC2A4;&#xD2B8; &#xAC12; ( &#x203B; &#xAC00;&#xB2A5;&#xD55C; &#xC774;&#xBBF8;&#xC9C0;
+          &#xD30C;&#xC77C; &#xD655;&#xC7A5;&#xC790;&#xB294; jpg, jpeg, png&#xC785;&#xB2C8;&#xB2E4;.
+          &#xB2E4;&#xB978; &#xD655;&#xC7A5;&#xC790; &#xD30C;&#xC77C;&#xC744; &#xB123;&#xC744;
+          &#xACBD;&#xC6B0; &#xBB38;&#xC11C;&#xAC00; &#xC5F4;&#xB9AC;&#xC9C0; &#xC54A;&#xC744;
+          &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xBBF8;&#xC9C0; &#xD30C;&#xC77C;
+          &#xD06C;&#xAE30;&#xB294; 1MB&#xB97C; &#xB118;&#xC9C0; &#xC54A;&#xC544;&#xC57C;
+          &#xD569;&#xB2C8;&#xB2E4;.)</p>
       </td>
     </tr>
     <tr>
