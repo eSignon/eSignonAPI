@@ -170,14 +170,10 @@
       <td style="text-align:left">Array</td>
       <td style="text-align:left">Optional</td>
       <td style="text-align:left">&#xBBF8;&#xB9AC; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC774; &#xC788;&#xC744;
-        &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12; &#xC785;&#xB825;&#xAC00;&#xB2A5;
-        &#xBC15;&#xC2A4;:
-        <br />RadioBox,
-        <br />CheckBox,
-        <br />LabelBox,
-        <br />TextBox,
-        <br />DatePickerBox(&#xB0A0;&#xC9DC;&#xBC15;&#xC2A4;),
-        <br />PictureBox</td>
+        &#xACBD;&#xC6B0; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC12;
+        <br />&#xC785;&#xB825;&#xAC00;&#xB2A5;&#xD55C; &#xBC15;&#xC2A4; : RadioBox,
+        CheckBox, LabelBox, TextBox, PictureBox,
+        <br />DatePickerBox(&#xB0A0;&#xC9DC;&#xBC15;&#xC2A4;)</td>
     </tr>
     <tr>
       <td style="text-align:left">field_list.field_name</td>
